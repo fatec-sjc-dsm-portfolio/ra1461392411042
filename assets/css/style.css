@@ -401,6 +401,12 @@ code { font-family: var(--f-mono); font-size: .85em; background: var(--surface-2
 }
 .project[data-num]:hover::before { -webkit-text-stroke-color: var(--accent); }
 @media (min-width: 900px) { .project[data-num]::before { right: 40px; top: -4px; } }
+@media (max-width: 640px) {
+  .project[data-num]::before { font-size: 3.6rem; top: 14px; right: 16px; opacity: .7; }
+  .project-meta { padding-right: 64px; }
+  .hero-cta .btn { flex: 1 1 0; padding: 0 12px; }
+  .hero-cta .btn-primary { flex-basis: 100%; }
+}
 .project-head > * { position: relative; }
 .project-head h3 { font: 400 clamp(1.9rem, 3.6vw, 2.7rem)/1.05 var(--f-serif); letter-spacing: -.01em; max-width: 16em; }
 .project-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
@@ -419,6 +425,11 @@ code { font-family: var(--f-mono); font-size: .85em; background: var(--surface-2
 .project-media { margin: 0 12px; border-radius: 16px; overflow: hidden; background: var(--surface-2); }
 @media (min-width: 900px) { .project-media { margin: 0 20px; } }
 .project-media > img { width: 100%; height: auto; transition: transform 1.2s var(--ease); }
+/* No celular o banner 3:1 fica baixo demais: recorta para focar nos prints (lado direito) */
+@media (max-width: 640px) {
+  .project-media > img { aspect-ratio: 16 / 10; object-fit: cover; object-position: 80% 50%; }
+  .project-media > img.media-center { aspect-ratio: 2 / 1; object-position: 50% 50%; }
+}
 .project:hover .project-media > img { transform: scale(1.025); }
 .project-media figcaption {
   padding: 12px 16px; font-size: .84rem; color: var(--muted); background: var(--surface-2);
