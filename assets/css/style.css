@@ -160,6 +160,22 @@ code { font-family: var(--f-mono); font-size: .85em; background: var(--surface-2
   background: var(--accent);
 }
 .header-actions { display: flex; gap: 6px; }
+/* Seletor de idioma PT/EN */
+.lang-btn {
+  position: relative; display: inline-flex; align-items: center; height: 40px; padding: 4px;
+  border-radius: 11px; border: 1px solid var(--line); background: var(--surface);
+  font: 500 .72rem var(--f-mono); letter-spacing: .06em; text-decoration: none;
+  transition: border-color .2s var(--ease), transform .2s var(--ease);
+}
+.lang-btn span {
+  display: grid; place-items: center; width: 34px; height: 30px; border-radius: 8px;
+  color: var(--muted); transition: background-color .25s var(--ease), color .25s var(--ease);
+}
+.lang-btn span.on { background: var(--accent); color: var(--accent-ink); }
+.lang-btn:hover { border-color: var(--line-strong); }
+.lang-btn:hover span:not(.on) { color: var(--ink); }
+.lang-btn:active { transform: scale(.96); }
+
 .icon-btn {
   width: 40px; height: 40px; border-radius: 11px;
   display: grid; place-items: center;

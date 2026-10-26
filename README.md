@@ -2,7 +2,7 @@
 
 Portfólio acadêmico digital do curso de **Desenvolvimento de Software Multiplataforma (DSM)** — FATEC Prof. Jessen Vidal, São José dos Campos (2026/2).
 
-**Acesse:** https://fatec-sjc-dsm-portfolio.github.io/ra1461392411042/
+**Acesse:** https://fatec-sjc-dsm-portfolio.github.io/ra1461392411042/ · versão em inglês: [en.html](https://fatec-sjc-dsm-portfolio.github.io/ra1461392411042/en.html)
 
 ## Conteúdo
 

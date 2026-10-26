@@ -11,6 +11,15 @@
     try { localStorage.setItem('theme', next); } catch (e) {}
   });
 
+  // ---- Troca de idioma: mantém a seção atual (as âncoras são iguais nas duas versões) ----
+  Array.prototype.forEach.call(document.querySelectorAll('.lang-btn'), function (a) {
+    a.addEventListener('click', function () {
+      var current = document.querySelector('.main-nav a.active');
+      var hash = location.hash || (current ? current.getAttribute('href') : '');
+      a.href = a.getAttribute('href').split('#')[0] + hash;
+    });
+  });
+
   // ---- Menu mobile ----
   var menuBtn = document.getElementById('menu-toggle');
   var nav = document.getElementById('main-nav');
