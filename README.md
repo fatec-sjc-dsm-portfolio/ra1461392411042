@@ -9,9 +9,10 @@ Portfólio acadêmico digital do curso de **Desenvolvimento de Software Multipla
 | Requisito do roteiro | Seção do site |
 |---|---|
 | 2.1 Apresentação pessoal (foto, nome, formação, objetivos, áreas de interesse) | `#apresentacao` |
-| 2.2.1 Projetos Acadêmicos (API) — parceiro, problema, tecnologias, solução, repositório (cópia pessoal), contribuições, hard e soft skills | `#projetos-api` |
+| Observação 2: competências técnicas na escala de 1 (ouvi falar) a 5 (fluente) | `#stack` e hard skills de cada API |
+| 2.2.1 Projetos Acadêmicos (API) — parceiro, problema, tecnologias, solução, repositório (cópia pessoal), contribuições, hard e soft skills | `#projetos-api` (linha do tempo fixa e os 6 projetos completos na página; link direto: `#api-1` a `#api-6`) |
 | 2.2.2 Projetos Profissionais e 2.2.3 Projetos Pessoais | `#outros-projetos` |
-| 3. Informações Curriculares (formação, idiomas/certificações, trabalhos acadêmicos, competências com escala 1–5) | `#curriculo` |
+| 3. Informações Curriculares (formação, idiomas, certificações e cursos, eventos e apresentações, trabalhos acadêmicos) | `#curriculo` |
 | 4. Contato (LinkedIn, GitHub, e-mail) | `#contato` |
 
 ### Projetos integradores (API)
@@ -29,13 +30,16 @@ Portfólio acadêmico digital do curso de **Desenvolvimento de Software Multipla
 
 Site estático em HTML, CSS e JavaScript puros, sem dependências de build, publicado no GitHub Pages.
 
-- Layout responsivo (mobile, tablet e desktop) e tema claro/escuro.
+- Layout responsivo (mobile, tablet e desktop) e tema escuro/claro com troca manual.
+- Interações em JavaScript puro: fundo de pontos que reage ao cursor (canvas), faixas de tecnologias que acompanham a velocidade da rolagem, abas de competências com medidores animados, linha do tempo que acompanha a leitura dos projetos, botões magnéticos e entrada de títulos por máscara. Tudo respeita `prefers-reduced-motion`.
+- Versão em português (`index.html`) e em inglês (`en.html`).
 - HTML semântico e acessível: navegação por teclado, link "pular para o conteúdo", textos alternativos e contraste adequado.
-- Demonstrações visuais (GIFs e vídeos) dos MVPs incorporadas à página, com carregamento sob demanda.
+- Prints reais de cada projeto, com links para os vídeos de demonstração dos MVPs.
 - Folha de estilos de impressão.
 
 ```
 index.html
+en.html
 assets/
   css/style.css
   js/main.js

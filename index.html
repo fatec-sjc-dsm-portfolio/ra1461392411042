@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>João Vitor Rossi Ferreira — Portfólio Acadêmico | DSM FATEC SJC</title>
-  <meta name="description" content="Portfólio acadêmico de João Vitor Rossi Ferreira, estudante de Desenvolvimento de Software Multiplataforma na FATEC São José dos Campos: projetos integradores (API), experiência profissional, projetos pessoais e informações curriculares.">
+  <title>João Vitor Rossi Ferreira | Portfólio Acadêmico DSM FATEC SJC</title>
+  <meta name="description" content="Portfólio acadêmico de João Vitor Rossi Ferreira, desenvolvedor front-end e mobile em formação no curso de Desenvolvimento de Software Multiplataforma da FATEC São José dos Campos.">
   <meta name="author" content="João Vitor Rossi Ferreira">
-  <meta property="og:title" content="João Vitor Rossi Ferreira — Portfólio Acadêmico">
-  <meta property="og:description" content="Desenvolvedor front-end e mobile em formação — DSM, FATEC São José dos Campos.">
+  <meta property="og:title" content="João Vitor Rossi Ferreira | Portfólio Acadêmico">
+  <meta property="og:description" content="Desenvolvedor front-end e mobile em formação, DSM FATEC São José dos Campos.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#0c0d10">
+  <meta name="theme-color" content="#0c0c0d">
   <link rel="alternate" hreflang="pt-BR" href="index.html">
   <link rel="alternate" hreflang="en" href="en.html">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script>
     document.documentElement.classList.add('js');
@@ -24,789 +24,813 @@
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
 
-  <header class="site-header" id="site-header">
+  <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="#topo" aria-label="Início">
-        <span class="brand-mark" aria-hidden="true">JR</span>
-        <span class="brand-text">João Vitor Rossi Ferreira</span>
-      </a>
+      <a class="brand" href="#apresentacao" aria-label="João Vitor Rossi Ferreira, início">João Rossi<b>.</b></a>
       <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <span class="nav-pill" aria-hidden="true"></span>
         <ul>
           <li><a href="#apresentacao">Apresentação</a></li>
-          <li><a href="#projetos-api">Projetos Acadêmicos</a></li>
-          <li><a href="#outros-projetos">Outros Projetos</a></li>
+          <li><a href="#projetos-api">Projetos acadêmicos</a></li>
+          <li><a href="#outros-projetos">Outros projetos</a></li>
           <li><a href="#curriculo">Currículo</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
       <div class="header-actions">
-        <a class="lang-btn" href="en.html" hreflang="en" lang="en" title="Read in English" aria-label="Read this portfolio in English"><span class="on" aria-hidden="true">PT</span><span aria-hidden="true">EN</span></a>
-        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Alternar tema claro/escuro" title="Alternar tema">
-          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-        </button>
-        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-        </button>
+        <a class="pill-btn lang-btn" href="en.html" hreflang="en" title="Read in English" aria-label="Read this portfolio in English"><span class="on">PT</span><span lang="en">EN</span></a>
+        <button class="pill-btn" id="theme-toggle" type="button" aria-label="Alternar tema claro e escuro" data-dark="Escuro" data-light="Claro">Claro</button>
+        <button class="pill-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
       </div>
     </div>
   </header>
 
   <main id="conteudo">
-    <!-- ============ 1. APRESENTAÇÃO ============ -->
+    <!-- 1. APRESENTAÇÃO -->
     <section id="apresentacao" class="hero" aria-labelledby="titulo-apresentacao">
-      <span id="topo"></span>
-      <div class="hero-glow" aria-hidden="true"><span></span><span></span></div>
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <p class="eyebrow hero-in" style="--d:0"><span class="pulse" aria-hidden="true"></span>Portfólio Acadêmico · DSM · FATEC SJC · 2026/2</p>
-          <h1 id="titulo-apresentacao" class="hero-in" style="--d:1">João Vitor <em>Rossi</em> Ferreira</h1>
-          <p class="hero-role hero-in" style="--d:2">Desenvolvedor <em>front-end</em> e <em>mobile</em> em formação. Transformo requisitos em interfaces claras, do protótipo no Figma à integração com a API.</p>
-          <dl class="hero-facts hero-in" style="--d:3">
-            <div><dt>Formação atual</dt><dd>Tecnólogo em Desenvolvimento de Software Multiplataforma — 6º semestre<br><span class="muted">FATEC Prof. Jessen Vidal, São José dos Campos · 2024 – 2026</span><br><span class="muted">+ Tecnólogo em Inteligência Artificial — UFMS · desde 2026/2</span></dd></div>
-            <div><dt>Atuação atual</dt><dd>PostNet — Atendimento / Administrativo<br><span class="muted">desde jul/2026</span></dd></div>
+      <canvas class="hero-dots" aria-hidden="true"></canvas>
+      <div class="hero-dots-fade" aria-hidden="true"></div>
+
+      <div class="wrap hero-stage">
+        <div class="hero-copy">
+          <p class="hero-kicker"><i aria-hidden="true"></i>Portfólio acadêmico, DSM FATEC SJC</p>
+          <h1 class="hero-name split" id="titulo-apresentacao">
+            <span class="mask" style="--i:0"><span>João Vitor</span></span>
+            <span class="mask" style="--i:1"><span><em>Rossi</em> Ferreira</span></span>
+          </h1>
+          <p class="hero-lead rv">Desenvolvedor <strong>front-end e mobile</strong> em formação. Transformo requisitos em interfaces claras, do protótipo no Figma à integração com a API.</p>
+          <dl class="hero-facts rv">
+            <div>
+              <dt>Formação atual</dt>
+              <dd><strong>Tecnólogo em Desenvolvimento de Software Multiplataforma, 6º semestre</strong><span>FATEC Prof. Jessen Vidal, São José dos Campos. 2024 a 2026.</span><span>E Tecnólogo em Inteligência Artificial na UFMS, desde 2026/2.</span></dd>
+            </div>
+            <div>
+              <dt>Atuação atual</dt>
+              <dd><strong>PostNet, atendimento e administrativo</strong><span>Desde jul/2026.</span></dd>
+            </div>
           </dl>
-          <div class="hero-cta hero-in" style="--d:4">
-            <a class="btn btn-primary" href="#projetos-api">Ver projetos <span aria-hidden="true">→</span></a>
-            <a class="btn" href="https://www.linkedin.com/in/jo%C3%A3o-rossi-7311a0301" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn" href="https://github.com/joaorossiferreira" target="_blank" rel="noopener">GitHub</a>
+          <div class="hero-cta rv">
+            <a class="btn btn-primary magnetic" href="#projetos-api">Ver projetos <span class="arr" aria-hidden="true">→</span></a>
+            <a class="btn magnetic" href="https://www.linkedin.com/in/jo%C3%A3o-rossi-7311a0301" target="_blank" rel="noopener">LinkedIn <span class="arr" aria-hidden="true">↗</span></a>
+            <a class="btn magnetic" href="https://github.com/joaorossiferreira" target="_blank" rel="noopener">GitHub <span class="arr" aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <div class="hero-photo hero-in" style="--d:2">
-          <div class="photo-frame">
-            <img src="assets/img/foto.jpg" alt="Foto de João Vitor Rossi Ferreira" width="320" height="400"
-                 onerror="this.hidden=true;this.nextElementSibling.hidden=false">
-            <div class="photo-fallback" hidden aria-hidden="true">JR</div>
-          </div>
-          <p class="photo-tag"><span class="pulse" aria-hidden="true"></span>6º semestre · DSM · FATEC SJC</p>
+        <figure class="hero-photo">
+          <div class="frame"><img src="assets/img/foto.jpg" alt="Foto de João Vitor Rossi Ferreira" width="320" height="400"></div>
+          <figcaption class="photo-tag"><i aria-hidden="true"></i>6º semestre, DSM FATEC SJC</figcaption>
+        </figure>
+      </div>
+
+      <div class="tapes" aria-hidden="true">
+        <div class="tape tape-a"><div class="tape-track"><span>React</span><span>TypeScript</span><span>Next.js</span><span>Tailwind CSS</span><span>Flutter</span><span>React Native</span><span>Node.js</span><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>MongoDB</span><span>Figma</span></div></div>
+        <div class="tape tape-b"><div class="tape-track"><span>Docker</span><span>GitHub Actions</span><span>Jest</span><span>Prisma</span><span>Spring Boot</span><span>Git</span><span>Jira</span><span>Scrum</span><span>UI/UX</span><span>APIs REST</span><span>IA aplicada</span><span>Dart</span><span>Expo</span><span>gRPC</span></div></div>
+      </div>
+
+      <div class="wrap">
+        <div class="about">
+          <article class="cell c-sobre rv">
+            <p class="cell-label">Sobre mim</p>
+            <p>Curso Desenvolvimento de Software Multiplataforma na FATEC São José dos Campos desde 2024. Nos seis projetos integradores (API), trabalhei principalmente no <strong>front-end web</strong> com React e TypeScript e no <strong>mobile</strong> com Flutter, ligando as telas a APIs REST em Java, Node.js e Python.</p>
+            <p class="muted">Também fui Scrum Master no 2º semestre e sou Product Owner no 6º. Gosto de entender o problema de quem vai usar o sistema antes de escrever a primeira linha de código.</p>
+          </article>
+          <article class="cell c-obj rv">
+            <p class="cell-label">Objetivos</p>
+            <div class="goal">
+              <h4>Acadêmico</h4>
+              <p>Concluir a FATEC em 2026/2 entregando o CHATin, aprofundar IA no curso da UFMS e estudar arquitetura de software e testes automatizados.</p>
+            </div>
+            <div class="goal">
+              <h4>Profissional</h4>
+              <p>Atuar como desenvolvedor front-end e mobile, evoluindo para full stack, em produtos com boa experiência de uso e uso responsável de IA.</p>
+            </div>
+          </article>
+          <article class="cell c-int rv">
+            <p class="cell-label">Áreas de interesse</p>
+            <ul class="interests">
+              <li>Front-end</li>
+              <li>Apps mobile</li>
+              <li>UI/UX e prototipação</li>
+              <li>IA aplicada a produtos</li>
+              <li>IoT e dados em tempo real</li>
+              <li>Gestão ágil de produto</li>
+            </ul>
+          </article>
         </div>
-      </div>
 
-      <div class="container">
-        <ul class="stats" aria-label="Resumo da trajetória">
-          <li><strong data-count="6">6</strong><span>projetos integradores (API) entregues ou em andamento</span></li>
-          <li><strong data-count="4">4</strong><span>empresas parceiras reais: Necto Systems, Tecsus, Xertica e GSW</span></li>
-          <li><strong data-count="3">3</strong><span>papéis Scrum exercidos: Dev Team, Scrum Master e Product Owner</span></li>
-          <li><strong data-count="3">3</strong><span>anos de formação prática com metodologia ágil (2024 – 2026)</span></li>
-        </ul>
-      </div>
-
-      <div class="marquee" aria-label="Tecnologias com que trabalhei">
-        <ul class="marquee-track">
-          <li>React</li><li>TypeScript</li><li>Flutter</li><li>Next.js</li><li>Tailwind CSS</li><li>Node.js</li><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>MongoDB</li><li>Figma</li><li>GitHub Actions</li><li>Scrum</li>
-        </ul>
-        <ul class="marquee-track" aria-hidden="true">
-          <li>React</li><li>TypeScript</li><li>Flutter</li><li>Next.js</li><li>Tailwind CSS</li><li>Node.js</li><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>MongoDB</li><li>Figma</li><li>GitHub Actions</li><li>Scrum</li>
-        </ul>
-      </div>
-
-      <div class="container about-grid">
-        <article class="panel">
-          <h2 class="panel-title">Sobre mim</h2>
-          <p>Curso Desenvolvimento de Software Multiplataforma na FATEC São José dos Campos desde 2024. Ao longo de seis projetos integradores (API), trabalhei principalmente no <strong>front-end web (React + TypeScript)</strong> e no <strong>mobile (Flutter)</strong>, integrando interfaces a APIs REST construídas em Java, Node.js e Python. Exerci também os papéis de <strong>Scrum Master</strong> (2º semestre) e <strong>Product Owner</strong> (6º semestre), o que me deu visão de produto além do código.</p>
-          <p>Gosto de transformar requisitos confusos em telas claras e funcionais, e de entender o problema do usuário antes de escrever a primeira linha de código.</p>
-        </article>
-        <article class="panel">
-          <h2 class="panel-title">Objetivos</h2>
-          <h3 class="mini-title">Acadêmico</h3>
-          <p>Concluir a FATEC em 2026/2 entregando a API do 6º semestre (CHATin) e aprofundar a formação em IA no Curso Superior de Tecnologia em Inteligência Artificial da UFMS, iniciado em 2026/2, além de estudar arquitetura de software e testes automatizados.</p>
-          <h3 class="mini-title">Profissional</h3>
-          <p>Atuar como <strong>desenvolvedor front-end / mobile</strong>, evoluindo para full stack, em produtos que exijam boa experiência de uso, integração com APIs e uso responsável de IA.</p>
-        </article>
-        <article class="panel">
-          <h2 class="panel-title">Áreas de interesse</h2>
-          <ul class="chips" aria-label="Áreas de interesse">
-            <li>Desenvolvimento Front-end</li>
-            <li>Aplicativos Mobile (Flutter / React Native)</li>
-            <li>UI/UX e prototipação</li>
-            <li>IA aplicada a produtos (LLMs)</li>
-            <li>IoT e dados em tempo real</li>
-            <li>Gestão ágil de produto</li>
+        <!-- Competências técnicas com níveis (Observação 2 do roteiro) -->
+        <div class="stack" id="stack">
+          <div class="stack-top">
+            <div>
+              <h2 class="stack-title split">O que eu uso</h2>
+              <p class="scale-note">Autoavaliação pelo uso real nos projetos, de 1 (ouvi falar) a 5 (fluente).</p>
+            </div>
+            <ol class="scale" aria-label="Escala de níveis">
+              <li><b>1</b>Ouvi falar</li>
+              <li><b>2</b>Utilizador básico</li>
+              <li><b>3</b>Desenvolvedor autônomo</li>
+              <li><b>4</b>Avançado</li>
+              <li><b>5</b>Fluente</li>
+            </ol>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Categorias de tecnologias">
+            <button class="tab" role="tab" id="tab-front" aria-controls="panel-front" aria-selected="true" type="button">Front-end e mobile</button>
+            <button class="tab" role="tab" id="tab-back" aria-controls="panel-back" aria-selected="false" tabindex="-1" type="button">Back-end e dados</button>
+            <button class="tab" role="tab" id="tab-tools" aria-controls="panel-tools" aria-selected="false" tabindex="-1" type="button">Ferramentas e processo</button>
+          </div>
+          <ul class="skills tab-panel" id="panel-front" role="tabpanel" aria-labelledby="tab-front">
+            <li class="skill"><div class="skill-top"><span class="skill-name">React</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> ProStock, NectoPoint, SkyTrack</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">TypeScript</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> NectoPoint, SkyTrack, CyberProjekt</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">HTML e CSS</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> Todos os projetos web</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">Tailwind CSS</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> ProStock, NectoPoint, SkyTrack</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> Smart Farming, Biblioteca Digital</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">Flutter e Dart</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> Themis</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">React Native e Expo</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> CyberProjekt</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">Next.js</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> CHATin</p></li>
           </ul>
-        </article>
+          <ul class="skills tab-panel" id="panel-back" role="tabpanel" aria-labelledby="tab-back" hidden>
+            <li class="skill"><div class="skill-top"><span class="skill-name">Node.js e Prisma</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> ProStock, SkyTrack, CyberProjekt</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">Python</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> Smart Farming, Z-Score, Agente de IA</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">SQL (MySQL e PostgreSQL)</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> Smart Farming, SkyTrack, CHATin</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">MongoDB</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> SkyTrack, CyberProjekt</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">FastAPI e Flask</span><span class="skill-lvl">2/5</span></div><div class="meter" data-l="2" role="img" aria-label="Nível 2 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Utilizador básico.</b> Smart Farming, Themis</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">Java e Spring Boot</span><span class="skill-lvl">2/5</span></div><div class="meter" data-l="2" role="img" aria-label="Nível 2 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Utilizador básico.</b> NectoPoint (integração)</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">gRPC e HTTP/2</span><span class="skill-lvl">2/5</span></div><div class="meter" data-l="2" role="img" aria-label="Nível 2 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Utilizador básico.</b> Biblioteca Digital</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">Power BI e Orange</span><span class="skill-lvl">2/5</span></div><div class="meter" data-l="2" role="img" aria-label="Nível 2 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Utilizador básico.</b> Análise de dados</p></li>
+          </ul>
+          <ul class="skills tab-panel" id="panel-tools" role="tabpanel" aria-labelledby="tab-tools" hidden>
+            <li class="skill"><div class="skill-top"><span class="skill-name">Git e GitHub</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> Todos os projetos</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">Scrum e Jira</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> Scrum Master (ProStock), PO (CHATin)</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">Figma</span><span class="skill-lvl">4/5</span></div><div class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Avançado.</b> Protótipos de todas as APIs</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">GitHub Actions</span><span class="skill-lvl">3/5</span></div><div class="meter" data-l="3" role="img" aria-label="Nível 3 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Desenvolvedor autônomo.</b> SkyTrack, Security Testing</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">Docker</span><span class="skill-lvl">3/5</span></div><div class="meter" data-l="3" role="img" aria-label="Nível 3 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Desenvolvedor autônomo.</b> Smart Farming, Themis</p></li>
+            <li class="skill"><div class="skill-top"><span class="skill-name">Jest</span><span class="skill-lvl">2/5</span></div><div class="meter" data-l="2" role="img" aria-label="Nível 2 de 5"><i></i><i></i><i></i><i></i><i></i></div><p class="skill-where"><b>Utilizador básico.</b> SkyTrack</p></li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- ============ 2.1 PROJETOS ACADÊMICOS (API) ============ -->
+    <!-- 2.1 PROJETOS ACADÊMICOS (API) -->
     <section id="projetos-api" class="section" aria-labelledby="titulo-api">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">2.1 · Projetos Acadêmicos</p>
-          <h2 id="titulo-api">Aprendizagem por Projetos Integrados (API)</h2>
-          <p class="lead">Em cada semestre da FATEC, uma equipe Scrum desenvolve uma solução para um parceiro real. Abaixo, a trajetória completa — do primeiro site em Flask ao coach de estudos com IA. Cada link de repositório aponta para a <strong>cópia (fork) na minha conta pessoal</strong>, com o original da equipe indicado ao lado.</p>
+      <div class="wrap">
+        <header class="sec-head">
+          <h2 class="sec-title split" id="titulo-api">Projetos <em>acadêmicos</em></h2>
+          <p class="sec-intro rv">Seis semestres, seis parceiros reais, uma equipe Scrum por projeto. A linha do tempo acompanha a leitura e leva direto a cada semestre. Os repositórios apontam para a cópia (fork) na minha conta.</p>
         </header>
 
-        <nav class="timeline" aria-label="Linha do tempo das APIs">
-          <ol>
-            <li><a href="#api-1"><span class="t-sem">1º sem · 2024/1</span><span class="t-name">Smart Farming</span><span class="t-role">Dev Team</span></a></li>
-            <li><a href="#api-2"><span class="t-sem">2º sem · 2024/2</span><span class="t-name">ProStock</span><span class="t-role">Scrum Master</span></a></li>
-            <li><a href="#api-3"><span class="t-sem">3º sem · 2025/1</span><span class="t-name">NectoPoint</span><span class="t-role">Dev Team · Front</span></a></li>
-            <li><a href="#api-4"><span class="t-sem">4º sem · 2025/2</span><span class="t-name">SkyTrack</span><span class="t-role">Dev Team · Front</span></a></li>
-            <li><a href="#api-5"><span class="t-sem">5º sem · 2026/1</span><span class="t-name">Themis</span><span class="t-role">Dev Team · Mobile</span></a></li>
-            <li><a href="#api-6"><span class="t-sem">6º sem · 2026/2</span><span class="t-name">CHATin</span><span class="t-role">Product Owner</span></a></li>
-          </ol>
+        <nav class="tl rv" aria-label="Linha do tempo dos projetos integradores">
+          <a class="tl-item" href="#api-1"><span class="tl-sem">1º sem. 2024/1</span><span class="tl-name">Smart Farming</span><span class="tl-role">Dev Team</span></a>
+          <a class="tl-item" href="#api-2"><span class="tl-sem">2º sem. 2024/2</span><span class="tl-name">ProStock</span><span class="tl-role">Scrum Master</span></a>
+          <a class="tl-item" href="#api-3"><span class="tl-sem">3º sem. 2025/1</span><span class="tl-name">NectoPoint</span><span class="tl-role">Dev Team, front-end</span></a>
+          <a class="tl-item" href="#api-4"><span class="tl-sem">4º sem. 2025/2</span><span class="tl-name">SkyTrack</span><span class="tl-role">Dev Team, front-end</span></a>
+          <a class="tl-item" href="#api-5"><span class="tl-sem">5º sem. 2026/1</span><span class="tl-name">Themis</span><span class="tl-role">Dev Team, mobile</span></a>
+          <a class="tl-item" href="#api-6"><span class="tl-sem">6º sem. 2026/2</span><span class="tl-name">CHATin</span><span class="tl-role">Product Owner</span></a>
         </nav>
 
-        <!-- API 6 -->
-        <article class="project" id="api-6" data-num="06" aria-labelledby="api-6-t">
-          <header class="project-head">
-            <div>
-              <p class="project-meta"><span class="tag">6º semestre · 2026/2</span><span class="tag tag-status">Em andamento · Sprint 2 de 3 concluída</span></p>
-              <h3 id="api-6-t">CHATin — Coach de estudos para o ENEM com IA</h3>
-            </div>
-            <dl class="project-facts">
-              <div><dt>Empresa parceira</dt><dd>GSW</dd></div>
-              <div><dt>Meu papel</dt><dd>Product Owner</dd></div>
-              <div><dt>Período</dt><dd>set – nov/2026</dd></div>
+        <article class="project" id="api-1" aria-labelledby="api-1-t">
+          <div class="project-inner">
+            <header class="m-head">
+              <div>
+                <p class="when">1º semestre, 2024/1</p>
+                <h3 class="m-title" id="api-1-t">Smart Farming</h3>
+                <p class="m-sub">Monitoramento de estufa</p>
+              </div>
+              <div class="m-links">
+                <a class="btn btn-primary" href="https://github.com/joaorossiferreira/Projeto-Smart-Farming" target="_blank" rel="noopener">Repositório (cópia pessoal) <span class="arr" aria-hidden="true">↗</span></a>
+                <a class="link" href="https://github.com/CyberScrums/Projeto-Smart-Farming" target="_blank" rel="noopener">Original da equipe</a>
+              </div>
+            </header>
+            <dl class="m-facts">
+              <div><dt>Parceiro</dt><dd>Equipe Inove, Manufatura Avançada (FATEC SJC)</dd></div>
+              <div><dt>Meu papel</dt><dd>Dev Team</dd></div>
+              <div><dt>Período</dt><dd>mar a jun/2024</dd></div>
+              <div><dt>Situação</dt><dd>Concluído, 4 de 4 sprints</dd></div>
             </dl>
-          </header>
-          <figure class="project-media">
-            <img class="media-center" src="assets/img/chatin.webp" alt="Banner do projeto CHATin" loading="lazy" width="1600" height="533">
-          </figure>
-          <div class="project-body">
-            <section class="pb-block">
-              <h4>Problema</h4>
-              <p>Estudantes que se preparam para o ENEM têm dificuldade em saber o próprio nível em cada matéria, decidir o que estudar a seguir diante de um conteúdo extenso e perceber a própria evolução. Mentorias personalizadas são caras, o feedback sobre erros costuma ser tardio e a falta de progresso visível leva ao abandono do plano de estudos. Do lado do parceiro, há ainda a restrição de custo: o uso de IA precisa ser medido e limitado, e o sistema deve continuar útil mesmo se a IA estiver indisponível.</p>
-            </section>
-            <section class="pb-block">
-              <h4>Solução desenvolvida</h4>
-              <p>Aplicação web em que o estudante conversa livremente com um coach de IA. O sistema reconhece automaticamente a matéria e o tópico do ENEM discutidos, gera resumos salvos em uma biblioteca privada, cria questionários com gabarito e correção automática, registra o progresso por tópico e ajusta a dificuldade dos próximos questionários. Inclui uma área de Matéria Didática (apostila guiada), trilhas de estudo criadas pelo aluno, busca de fontes na web com citação e gamificação (XP, streak e ranking por apelido).</p>
-            </section>
-            <section class="pb-block">
-              <h4>Tecnologias</h4>
-              <ul class="tech"><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Google Gemini</li><li>Vercel</li><li>Figma</li><li>Jira</li></ul>
-            </section>
-            <section class="pb-block">
-              <h4>Contribuições pessoais</h4>
-              <ul class="bullets">
-                <li>Levantei e documentei as <strong>dores do cliente</strong> (Verificar / Planejar / Controlar) e a visão do produto a partir do desafio apresentado pela GSW.</li>
-                <li>Escrevi os <strong>18 requisitos funcionais e 9 não funcionais</strong>, incluindo restrições de custo e resiliência de IA (RNF6–RNF8).</li>
-                <li>Montei o <strong>Product Backlog com 20 user stories</strong>, prioridade, estimativa e critérios de aceitação, e a divisão em 3 sprints.</li>
-                <li>Defini o <strong>DoR e o DoD</strong> do projeto e mantive o README/relatórios de sprint atualizados para as revisões com o parceiro.</li>
-                <li>Configurei a estrutura inicial dos repositórios (submódulos front/back e projetos base) e apoiei ajustes visuais na tela de progresso.</li>
-              </ul>
-            </section>
-            <section class="pb-block pb-half">
-              <h4>Hard skills desenvolvidas</h4>
-              <ul class="bullets">
-                <li>Engenharia de requisitos e escrita de user stories com critérios de aceitação verificáveis.</li>
-                <li>Priorização e estimativa de backlog (pontos) e planejamento de sprints.</li>
-                <li>Noções de arquitetura de aplicações com LLM: classificação de tópicos, controle de tokens e estratégias de redução de consumo.</li>
-              </ul>
-            </section>
-            <section class="pb-block pb-half">
-              <h4>Soft skills exercitadas</h4>
-              <dl class="soft">
-                <dt>Comunicação com o cliente</dt><dd>Fui o ponto de contato da equipe com a GSW, traduzindo o desafio do parceiro em requisitos objetivos e levando dúvidas de volta ao cliente.</dd>
-                <dt>Tomada de decisão</dt><dd>Precisei priorizar o que entraria em cada sprint, negociando escopo com a equipe para entregar valor sem sobrecarregar o time.</dd>
-                <dt>Organização</dt><dd>Manter backlog, DoR, DoD e relatórios coerentes entre si exigiu disciplina e revisão constante da documentação.</dd>
-              </dl>
-            </section>
-            <p class="links">
-              <a class="btn btn-primary" href="https://github.com/joaorossiferreira/chatin" target="_blank" rel="noopener">Repositório (cópia pessoal)</a>
-              <a class="link" href="https://github.com/joaorossiferreira/chatin-front" target="_blank" rel="noopener">Front-end</a>
-              <a class="link" href="https://github.com/joaorossiferreira/chatin-back" target="_blank" rel="noopener">Back-end</a>
-              <a class="link muted" href="https://github.com/Equipe-Skyfall/chatin" target="_blank" rel="noopener">Original da equipe</a>
-            </p>
+            <figure class="m-shot">
+              <img src="assets/img/smartfarming.webp" alt="Telas do Smart Farming: médias dos sensores e gráficos por variável" loading="lazy" width="2400" height="1200">
+              <figcaption>Telas reais do MVP final. <a class="link" href="assets/media/smartfarming.gif" target="_blank" rel="noopener">Ver demonstração animada</a></figcaption>
+            </figure>
+            <div class="m-body">
+              <div class="m-main">
+                <section class="m-block">
+                  <h4>Problema</h4>
+                  <p>A equipe parceira coletava dados de sensores de uma estufa (temperatura, umidade do solo e do ar, volume de água), mas tratava e analisava tudo à mão em planilhas. O processo era lento, sujeito a erro e não permitia perceber rápido quando uma condição saía da faixa ideal para o cultivo.</p>
+                </section>
+                <section class="m-block">
+                  <h4>Solução desenvolvida</h4>
+                  <p>Site que recebe os arquivos gerados pelos sensores, armazena as leituras em banco de dados e as trata automaticamente, exibindo gráficos por variável, tabela de dados, médias, filtro por período e alertas quando os valores passam dos limites definidos.</p>
+                </section>
+                <section class="m-block">
+                  <h4>Contribuições pessoais</h4>
+                  <ul class="bullets">
+                    <li>Configuração do ambiente virtual Flask usado pela equipe.</li>
+                    <li>Arquitetura de informação e prototipação das telas no Figma.</li>
+                    <li>Interfaces com os gráficos dos sensores e apresentação dos dados de forma fácil de ler.</li>
+                    <li>Apoio ao sistema de alertas por limites predefinidos.</li>
+                  </ul>
+                </section>
+              </div>
+              <aside class="m-side">
+                <section class="m-block">
+                  <h4>Tecnologias</h4>
+                  <ul class="tech"><li class="chip">Python</li><li class="chip">Flask</li><li class="chip">Pandas</li><li class="chip">MySQL</li><li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">Bootstrap</li><li class="chip">JavaScript</li><li class="chip">Figma</li></ul>
+                </section>
+                <section class="m-block">
+                  <h4>Hard skills</h4>
+                  <p class="lvl-cap">Nível atual, de 1 a 5</p>
+                  <ul class="lvl-list">
+                    <li><span class="lvl-name">HTML e CSS</span><span class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">4/5, avançado</span></li>
+                    <li><span class="lvl-name">Python</span><span class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">4/5, avançado</span></li>
+                    <li><span class="lvl-name">Flask</span><span class="meter" data-l="2" role="img" aria-label="Nível 2 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">2/5, utilizador básico</span></li>
+                  </ul>
+                  <ul class="bullets">
+                    <li>Fundamentos de HTML, CSS e JavaScript.</li>
+                    <li>Back-end simples em Python com Flask e dados com Pandas.</li>
+                    <li>Versionamento com Git e GitHub em equipe.</li>
+                  </ul>
+                </section>
+                <section class="m-block">
+                  <h4>Soft skills</h4>
+                  <dl class="soft">
+                    <dt>Autonomia</dt><dd>Pesquisei sozinho bibliotecas de gráficos e formas de apresentar os dados, já que tudo era novo para mim.</dd>
+                    <dt>Criatividade</dt><dd>Busquei formas visuais simples para que dados técnicos fossem entendidos rapidamente.</dd>
+                    <dt>Adaptação ao Scrum</dt><dd>Primeiro contato com sprints, backlog e entregas incrementais.</dd>
+                  </dl>
+                </section>
+              </aside>
+            </div>
           </div>
         </article>
 
-        <!-- API 5 -->
-        <article class="project" id="api-5" data-num="05" aria-labelledby="api-5-t">
-          <header class="project-head">
-            <div>
-              <p class="project-meta"><span class="tag">5º semestre · 2026/1</span></p>
-              <h3 id="api-5-t">Themis — Análise jurídica de precedentes com IA</h3>
-            </div>
-            <dl class="project-facts">
-              <div><dt>Empresa parceira</dt><dd>Xertica</dd></div>
-              <div><dt>Meu papel</dt><dd>Dev Team · App mobile</dd></div>
-              <div><dt>Período</dt><dd>mar – mai/2026</dd></div>
-            </dl>
-          </header>
-          <figure class="project-media">
-            <img src="assets/img/themis.webp" alt="Telas do aplicativo Themis: login e lista de precedentes encontrados com percentual de similaridade e classificação de aplicabilidade" loading="lazy" width="2400" height="800">
-            <figcaption>Telas reais do app: login e precedentes encontrados com % de similaridade. <a href="assets/media/themis.mp4" target="_blank" rel="noopener">Assistir à demonstração em vídeo (57 s)</a></figcaption>
-          </figure>
-          <div class="project-body">
-            <section class="pb-block">
-              <h4>Problema</h4>
-              <p>Advogados e magistrados precisam fundamentar petições e decisões em precedentes, mas as decisões estão espalhadas entre vários tribunais e em grande volume. Encontrar os precedentes realmente aplicáveis exige ler decisões inteiras, sem uma medida objetiva de semelhança com o caso, o que consome muito tempo e aumenta o risco de usar um precedente inadequado ou desatualizado.</p>
-            </section>
-            <section class="pb-block">
-              <h4>Solução desenvolvida</h4>
-              <p>Aplicativo mobile conectado a uma API em Python que analisa a petição (PDF ou descrição do caso) com processamento de linguagem natural, consulta uma base indexada de precedentes e devolve as decisões relacionadas com percentual de similaridade, classificação de aplicabilidade (aplicável / possivelmente / não aplicável), resumo do caso e explicação da relação com cada precedente. No modo advogado, a IA também gera a petição inicial a partir da descrição do caso.</p>
-            </section>
-            <section class="pb-block">
-              <h4>Tecnologias</h4>
-              <ul class="tech"><li>Flutter</li><li>Dart</li><li>flutter_hooks</li><li>Python</li><li>FastAPI</li><li>MongoDB</li><li>LLM / PLN</li><li>JWT</li><li>Docker</li><li>Figma</li></ul>
-            </section>
-            <section class="pb-block">
-              <h4>Contribuições pessoais</h4>
-              <p class="note">Fui o integrante com mais commits no repositório do aplicativo.</p>
-              <ul class="bullets">
-                <li>Telas de <strong>login e cadastro</strong>, rotas do app e integração da tela de upload de petição.</li>
-                <li><strong>Frente 1 (modo advogado)</strong>: tela de geração de petição com filtro por órgão (STF, STJ, TST, TRF, TRT…) e integração com a API por <em>polling</em> assíncrono.</li>
-                <li>Tela de resultado com a petição renderizada em Markdown e lista de precedentes com selo de relevância e % de similaridade; <em>bottom sheet</em> para editar e regenerar a petição.</li>
-                <li>Funcionalidades de <strong>resumo das petições</strong>, <strong>histórico de petições</strong>, minuta de sentença e <strong>exportação em PDF</strong>.</li>
-                <li>Autenticação JWT com a API FastAPI e rodada final de QA/correções antes da entrega.</li>
-              </ul>
-            </section>
-            <section class="pb-block pb-half">
-              <h4>Hard skills desenvolvidas</h4>
-              <ul class="bullets">
-                <li>Desenvolvimento mobile com Flutter/Dart e estado reativo com <code>flutter_hooks</code>.</li>
-                <li>Consumo de APIs assíncronas (polling) e tratamento de estados de carregamento e erro.</li>
-                <li>Renderização de Markdown e geração de PDF no app.</li>
-              </ul>
-            </section>
-            <section class="pb-block pb-half">
-              <h4>Soft skills exercitadas</h4>
-              <dl class="soft">
-                <dt>Adaptabilidade</dt><dd>Aprendi Flutter durante o projeto — tecnologia nova para mim e para boa parte da equipe — e ainda assim entreguei as telas da Frente 1 dentro das sprints.</dd>
-                <dt>Autonomia</dt><dd>Tomei decisões de UX e de organização de telas sem depender de validação constante, reduzindo retrabalho.</dd>
-                <dt>Trabalho em equipe</dt><dd>Alinhei contratos de API, fluxo de polling e mensagens de erro com quem desenvolvia o back-end Python.</dd>
-              </dl>
-            </section>
-            <p class="links">
-              <a class="btn btn-primary" href="https://github.com/joaorossiferreira/themis" target="_blank" rel="noopener">Repositório (cópia pessoal)</a>
-              <a class="link" href="https://github.com/joaorossiferreira/themis-app" target="_blank" rel="noopener">App Flutter</a>
-              <a class="link" href="https://github.com/joaorossiferreira/themis-back" target="_blank" rel="noopener">Back-end</a>
-              <a class="link muted" href="https://github.com/Equipe-Skyfall/themis" target="_blank" rel="noopener">Original da equipe</a>
-            </p>
-          </div>
-        </article>
-
-        <!-- API 4 -->
-        <article class="project" id="api-4" data-num="04" aria-labelledby="api-4-t">
-          <header class="project-head">
-            <div>
-              <p class="project-meta"><span class="tag">4º semestre · 2025/2</span><span class="tag tag-ok">3/3 sprints concluídas</span></p>
-              <h3 id="api-4-t">SkyTrack — Monitoramento meteorológico e alertas de risco</h3>
-            </div>
-            <dl class="project-facts">
-              <div><dt>Empresa parceira</dt><dd>Tecsus</dd></div>
-              <div><dt>Meu papel</dt><dd>Dev Team · Front-end</dd></div>
-              <div><dt>Período</dt><dd>set – nov/2025</dd></div>
-            </dl>
-          </header>
-          <figure class="project-media">
-            <img src="assets/img/skytrack.webp" alt="Telas do SkyTrack: dashboard com dados meteorológicos em tempo real e listagem de estações pluviométricas" loading="lazy" width="2400" height="800">
-            <figcaption>Telas reais do sistema: dashboard em tempo real e gestão de estações. <a href="assets/media/skytrack.mp4" target="_blank" rel="noopener">Assistir à demonstração do MVP final (2 min)</a></figcaption>
-          </figure>
-          <div class="project-body">
-            <section class="pb-block">
-              <h4>Problema</h4>
-              <p>O cliente não tinha acesso, em tempo real, a dados de chuva, vento, umidade, temperatura e pressão, o que dificultava antecipar riscos como enchentes e deslizamentos. Além disso, estações e sensores de fabricantes diferentes usam formatos distintos, impedindo reunir os dados em um único lugar, e as informações existentes não eram compreensíveis para o público leigo (alunos e moradores).</p>
-            </section>
-            <section class="pb-block">
-              <h4>Solução desenvolvida</h4>
-              <p>Plataforma que recebe dados de estações meteorológicas de baixo custo (microcontrolador ESP32 com sensores), com um modelo de dados dinâmico que aceita diferentes tipos de estação e parâmetro. Os dados aparecem em um painel com histórico e relatórios; regras de alerta geram notificações automáticas de risco; e uma área educacional explica, em linguagem acessível, como as medições e estimativas são calculadas.</p>
-            </section>
-            <section class="pb-block">
-              <h4>Tecnologias</h4>
-              <ul class="tech"><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Node.js</li><li>Prisma</li><li>PostgreSQL</li><li>MongoDB</li><li>ESP32 / Arduino</li><li>Jest</li><li>GitHub Actions</li><li>Vercel</li></ul>
-            </section>
-            <section class="pb-block">
-              <h4>Contribuições pessoais</h4>
-              <p class="note">Fui o integrante com mais commits no repositório de front-end.</p>
-              <ul class="bullets">
-                <li>Estrutura base do front: <strong>sidebar, rotas, tela de login</strong> e reforço de segurança no <code>AuthContext</code>.</li>
-                <li>Páginas de <strong>Estações, Parâmetros, Histórico das estações</strong> e <strong>Relatórios com exportação CSV</strong>.</li>
-                <li>Substituição dos dados simulados pela <strong>integração real com o back-end</strong>.</li>
-                <li><strong>Notificações de alerta para o usuário público</strong> e página <strong>Educação</strong>.</li>
-                <li>Modo escuro, padronização visual e refatoração da estrutura de pastas.</li>
-                <li>Pipeline de <strong>CI no GitHub Actions</strong> (build do front) e <strong>testes de integração com Jest</strong>.</li>
-              </ul>
-            </section>
-            <section class="pb-block pb-half">
-              <h4>Hard skills desenvolvidas</h4>
-              <ul class="bullets">
-                <li>Arquitetura de front-end React com contexto de autenticação e rotas protegidas.</li>
-                <li>Visualização de séries temporais e exportação de dados.</li>
-                <li>Integração contínua (GitHub Actions) e testes automatizados com Jest.</li>
-              </ul>
-            </section>
-            <section class="pb-block pb-half">
-              <h4>Soft skills exercitadas</h4>
-              <dl class="soft">
-                <dt>Iniciativa</dt><dd>Assumi tarefas fora do escopo visual — CI e testes — quando percebi que a equipe não tinha validação automática antes do merge.</dd>
-                <dt>Comunicação</dt><dd>Escrevi o conteúdo educacional pensando em quem não é da área, o que exigiu explicar a lógica técnica em linguagem simples.</dd>
-                <dt>Colaboração</dt><dd>Revisei e integrei pull requests de colegas, mantendo as branches dev, test e main sincronizadas.</dd>
-              </dl>
-            </section>
-            <p class="links">
-              <a class="btn btn-primary" href="https://github.com/joaorossiferreira/skytrack" target="_blank" rel="noopener">Repositório (cópia pessoal)</a>
-              <a class="link" href="https://github.com/joaorossiferreira/skytrack-front" target="_blank" rel="noopener">Front-end</a>
-              <a class="link" href="https://github.com/joaorossiferreira/skytrack-back" target="_blank" rel="noopener">Back-end</a>
-              <a class="link muted" href="https://github.com/Equipe-Skyfall/skytrack" target="_blank" rel="noopener">Original da equipe</a>
-            </p>
-          </div>
-        </article>
-
-        <!-- API 3 -->
-        <article class="project" id="api-3" data-num="03" aria-labelledby="api-3-t">
-          <header class="project-head">
-            <div>
-              <p class="project-meta"><span class="tag">3º semestre · 2025/1</span><span class="tag tag-ok">3/3 sprints concluídas</span></p>
-              <h3 id="api-3-t">NectoPoint — Gestão de ponto eletrônico</h3>
-            </div>
-            <dl class="project-facts">
-              <div><dt>Empresa parceira</dt><dd>Necto Systems</dd></div>
-              <div><dt>Meu papel</dt><dd>Dev Team · Front-end</dd></div>
-              <div><dt>Período</dt><dd>mar – mai/2025</dd></div>
-            </dl>
-          </header>
-          <figure class="project-media">
-            <img src="assets/img/nectopoint.webp" alt="Telas do NectoPoint: formulário de solicitações e tela de registro de ponto do colaborador" loading="lazy" width="2400" height="800">
-            <figcaption>Telas reais do front-end: módulo de Solicitações (desenvolvido por mim) e registro de ponto. Capturadas executando o projeto localmente com dados fictícios.</figcaption>
-          </figure>
-          <div class="project-body">
-            <section class="pb-block">
-              <h4>Problema</h4>
-              <p>O registro manual de ponto gerava erros e inconsistências nas horas trabalhadas, e não havia um lugar único para tratar horas extras, férias, folgas e justificativas de ausência. Com isso, os pedidos dos colaboradores e as aprovações dos gestores ficavam dispersos, e decisões sobre banco de horas e escalas eram tomadas sem dados confiáveis.</p>
-            </section>
-            <section class="pb-block">
-              <h4>Solução desenvolvida</h4>
-              <p>Sistema web de controle de ponto: o colaborador registra entrada, saída e intervalos, consulta o histórico e abre solicitações (férias, folga, hora extra, abono com atestado anexado, ajuste de ponto). O gestor aprova ou reprova as solicitações, ajusta marcações e acompanha relatórios de horas extras e ausências, com cálculo automático conforme a CLT.</p>
-            </section>
-            <section class="pb-block">
-              <h4>Tecnologias</h4>
-              <ul class="tech"><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Java</li><li>Spring Boot</li><li>Figma</li><li>Jira</li></ul>
-            </section>
-            <section class="pb-block">
-              <h4>Contribuições pessoais</h4>
-              <ul class="bullets">
-                <li>Prototipação no Figma e <strong>barra de navegação</strong> adaptada a cada perfil (colaborador e gestor).</li>
-                <li>Módulo completo de <strong>Solicitações</strong>: férias, folga, hora extra e abono, com <strong>anexo de arquivos</strong> (atestados).</li>
-                <li>Fluxo de <strong>aprovação de solicitações</strong> pelo gestor.</li>
-                <li><strong>Edição de ponto</strong>, inclusive para turnos já encerrados.</li>
-                <li>Tipagem com <em>enums</em> e interfaces TypeScript e um hook para padronizar o envio de JSON à API Java.</li>
-              </ul>
-            </section>
-            <section class="pb-block pb-half">
-              <h4>Hard skills desenvolvidas</h4>
-              <ul class="bullets">
-                <li>TypeScript com tipagem forte (enums, interfaces) em React.</li>
-                <li>Integração front-end com API REST em Spring Boot, incluindo upload de arquivos.</li>
-                <li>Criação de hooks customizados.</li>
-              </ul>
-            </section>
-            <section class="pb-block pb-half">
-              <h4>Soft skills exercitadas</h4>
-              <dl class="soft">
-                <dt>Proatividade</dt><dd>No início demorei para começar as tarefas e atrasei partes que dependiam do front. A partir da Sprint 2 passei a puxar as tarefas mais cedo — uma melhora real, ainda que não completa.</dd>
-                <dt>Comunicação</dt><dd>A comunicação entre front e back foi uma falha da equipe, e eu tive parte nela. Aprendi que combinar contratos de API logo no início evita retrabalho — prática que levei para os projetos seguintes.</dd>
-                <dt>Trabalho em equipe</dt><dd>Com a troca de Scrum Master precisei me adaptar a outra dinâmica; me mantive disponível para ajudar e pedir ajuda.</dd>
-              </dl>
-            </section>
-            <p class="links">
-              <a class="btn btn-primary" href="https://github.com/joaorossiferreira/nectopoint" target="_blank" rel="noopener">Repositório (cópia pessoal)</a>
-              <a class="link" href="https://github.com/joaorossiferreira/nectopoint-front" target="_blank" rel="noopener">Front-end</a>
-              <a class="link" href="https://github.com/joaorossiferreira/nectopoint-back" target="_blank" rel="noopener">Back-end</a>
-              <a class="link muted" href="https://github.com/Equipe-Skyfall/nectopoint" target="_blank" rel="noopener">Original da equipe</a>
-            </p>
-          </div>
-        </article>
-
-        <!-- API 2 -->
-        <article class="project" id="api-2" data-num="02" aria-labelledby="api-2-t">
-          <header class="project-head">
-            <div>
-              <p class="project-meta"><span class="tag">2º semestre · 2024/2</span><span class="tag tag-ok">4/4 sprints concluídas</span></p>
-              <h3 id="api-2-t">ProStock — Controle de estoque</h3>
-            </div>
-            <dl class="project-facts">
+        <article class="project" id="api-2" aria-labelledby="api-2-t">
+          <div class="project-inner">
+            <header class="m-head">
+              <div>
+                <p class="when">2º semestre, 2024/2</p>
+                <h3 class="m-title" id="api-2-t">ProStock</h3>
+                <p class="m-sub">Controle de estoque</p>
+              </div>
+              <div class="m-links">
+                <a class="btn btn-primary" href="https://github.com/joaorossiferreira/API_2Semestre" target="_blank" rel="noopener">Repositório (cópia pessoal) <span class="arr" aria-hidden="true">↗</span></a>
+                <a class="link" href="https://github.com/EquipeSkyfall/API_2Semestre" target="_blank" rel="noopener">Original da equipe</a>
+              </div>
+            </header>
+            <dl class="m-facts">
               <div><dt>Parceiro</dt><dd>Prof. Claudio Lima (cliente acadêmico)</dd></div>
               <div><dt>Meu papel</dt><dd>Scrum Master</dd></div>
-              <div><dt>Período</dt><dd>set – dez/2024</dd></div>
+              <div><dt>Período</dt><dd>set a dez/2024</dd></div>
+              <div><dt>Situação</dt><dd>Concluído, 4 de 4 sprints</dd></div>
             </dl>
-          </header>
-          <figure class="project-media">
-            <img src="assets/img/prostock.webp" alt="Telas do ProStock: listagem de produtos com painel de detalhes e cadastro de fornecedores" loading="lazy" width="2400" height="800">
-            <figcaption>Telas reais do MVP final: produtos com painel de detalhes e cadastro de fornecedores. <a href="assets/media/prostock.mp4" target="_blank" rel="noopener">Assistir à demonstração em vídeo (3 min)</a></figcaption>
-          </figure>
-          <div class="project-body">
-            <section class="pb-block">
-              <h4>Problema</h4>
-              <p>O controle de estoque feito manualmente gerava erros de registro e perda de rastreabilidade dos itens. Sem um sistema central, entradas, saídas, fornecedores e locais de armazenamento ficavam desconectados, não havia aviso de estoque mínimo nem de validade próxima, e as decisões de compra eram tomadas sem dados confiáveis.</p>
-            </section>
-            <section class="pb-block">
-              <h4>Solução desenvolvida</h4>
-              <p>Sistema web de gestão de estoque com cadastro de usuários e produtos, categorias hierárquicas, registro de entradas e saídas, cadastro de fornecedores, setores e locais de armazenamento, notificações automáticas de estoque mínimo e de produtos próximos ao vencimento, e relatórios para apoio à compra.</p>
-            </section>
-            <section class="pb-block">
-              <h4>Tecnologias</h4>
-              <ul class="tech"><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Node.js</li><li>Prisma</li><li>Figma</li><li>Jira</li></ul>
-            </section>
-            <section class="pb-block">
-              <h4>Contribuições pessoais</h4>
-              <ul class="bullets">
-                <li>Como <strong>Scrum Master</strong>, conduzi as cerimônias (planning, dailies, review e retrospectiva) e acompanhei o andamento das tarefas no Jira.</li>
-                <li>Distribuí as tarefas entre front e back e removi impedimentos técnicos da equipe.</li>
-                <li>Organizei a documentação das sprints no repositório.</li>
-                <li>Participei do desenvolvimento das telas de CRUD no front-end (React + TypeScript) integradas à API em Node.js/Prisma.</li>
-              </ul>
-            </section>
-            <section class="pb-block pb-half">
-              <h4>Hard skills desenvolvidas</h4>
-              <ul class="bullets">
-                <li>Primeiro contato com React, TypeScript e Tailwind em um projeto real.</li>
-                <li>Operações CRUD integradas a uma API REST com ORM (Prisma).</li>
-                <li>Uso do Jira para gestão de backlog e sprints.</li>
-              </ul>
-            </section>
-            <section class="pb-block pb-half">
-              <h4>Soft skills exercitadas</h4>
-              <dl class="soft">
-                <dt>Liderança</dt><dd>Distribuí tarefas de forma equilibrada e acompanhei o progresso diário, mantendo reuniões curtas e objetivas.</dd>
-                <dt>Organização</dt><dd>Dividi o projeto em módulos para que front e back trabalhassem em paralelo.</dd>
-                <dt>Mediação</dt><dd>Como facilitador, precisei equilibrar prazos e opiniões diferentes dentro da equipe.</dd>
-              </dl>
-            </section>
-            <p class="links">
-              <a class="btn btn-primary" href="https://github.com/joaorossiferreira/API_2Semestre" target="_blank" rel="noopener">Repositório (cópia pessoal)</a>
-              <a class="link muted" href="https://github.com/EquipeSkyfall/API_2Semestre" target="_blank" rel="noopener">Original da equipe</a>
-            </p>
+            <figure class="m-shot">
+              <img src="assets/img/prostock.webp" alt="Telas do ProStock: cadastro de fornecedores e lista de produtos com painel de detalhes" loading="lazy" width="2400" height="1200">
+              <figcaption>Telas reais do MVP final. <a class="link" href="assets/media/prostock.mp4" target="_blank" rel="noopener">Ver demonstração em vídeo (3 min)</a></figcaption>
+            </figure>
+            <div class="m-body">
+              <div class="m-main">
+                <section class="m-block">
+                  <h4>Problema</h4>
+                  <p>O controle de estoque feito à mão gerava erros de registro e perda de rastreabilidade. Sem um sistema central, entradas, saídas, fornecedores e locais de armazenamento ficavam desconectados, não havia aviso de estoque mínimo nem de validade próxima, e as compras eram decididas sem dados confiáveis.</p>
+                </section>
+                <section class="m-block">
+                  <h4>Solução desenvolvida</h4>
+                  <p>Sistema web de gestão de estoque com cadastro de usuários e produtos, categorias hierárquicas, entradas e saídas, fornecedores, setores e locais de armazenamento, notificações automáticas de estoque mínimo e de vencimento próximo, e relatórios de apoio à compra.</p>
+                </section>
+                <section class="m-block">
+                  <h4>Contribuições pessoais</h4>
+                  <ul class="bullets">
+                    <li>Como <strong>Scrum Master</strong>, conduzi planning, dailies, review e retrospectiva e acompanhei as tarefas no Jira.</li>
+                    <li>Distribuí as tarefas entre front e back e removi impedimentos técnicos da equipe.</li>
+                    <li>Organizei a documentação das sprints no repositório.</li>
+                    <li>Participei das telas de CRUD no front (React e TypeScript) integradas à API em Node.js com Prisma.</li>
+                  </ul>
+                </section>
+              </div>
+              <aside class="m-side">
+                <section class="m-block">
+                  <h4>Tecnologias</h4>
+                  <ul class="tech"><li class="chip">React</li><li class="chip">TypeScript</li><li class="chip">Tailwind CSS</li><li class="chip">Node.js</li><li class="chip">Prisma</li><li class="chip">Figma</li><li class="chip">Jira</li></ul>
+                </section>
+                <section class="m-block">
+                  <h4>Hard skills</h4>
+                  <p class="lvl-cap">Nível atual, de 1 a 5</p>
+                  <ul class="lvl-list">
+                    <li><span class="lvl-name">Scrum e Jira</span><span class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">4/5, avançado</span></li>
+                    <li><span class="lvl-name">Node.js e Prisma</span><span class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">4/5, avançado</span></li>
+                  </ul>
+                  <ul class="bullets">
+                    <li>Primeiro contato com React, TypeScript e Tailwind em um projeto real.</li>
+                    <li>Operações CRUD integradas a uma API REST com ORM.</li>
+                    <li>Gestão de backlog e sprints no Jira.</li>
+                  </ul>
+                </section>
+                <section class="m-block">
+                  <h4>Soft skills</h4>
+                  <dl class="soft">
+                    <dt>Liderança</dt><dd>Distribuí as tarefas de forma equilibrada e acompanhei o progresso diário, com reuniões curtas e objetivas.</dd>
+                    <dt>Organização</dt><dd>Dividi o projeto em módulos para que front e back trabalhassem em paralelo.</dd>
+                    <dt>Mediação</dt><dd>Como facilitador, equilibrei prazos e opiniões diferentes dentro da equipe.</dd>
+                  </dl>
+                </section>
+              </aside>
+            </div>
           </div>
         </article>
 
-        <!-- API 1 -->
-        <article class="project" id="api-1" data-num="01" aria-labelledby="api-1-t">
-          <header class="project-head">
-            <div>
-              <p class="project-meta"><span class="tag">1º semestre · 2024/1</span><span class="tag tag-ok">4/4 sprints concluídas</span></p>
-              <h3 id="api-1-t">Smart Farming — Monitoramento de estufa</h3>
-            </div>
-            <dl class="project-facts">
-              <div><dt>Parceiro</dt><dd>Equipe Inove — curso de Manufatura Avançada (FATEC SJC)</dd></div>
-              <div><dt>Meu papel</dt><dd>Dev Team</dd></div>
-              <div><dt>Período</dt><dd>mar – jun/2024</dd></div>
+        <article class="project" id="api-3" aria-labelledby="api-3-t">
+          <div class="project-inner">
+            <header class="m-head">
+              <div>
+                <p class="when">3º semestre, 2025/1</p>
+                <h3 class="m-title" id="api-3-t">NectoPoint</h3>
+                <p class="m-sub">Gestão de ponto eletrônico</p>
+              </div>
+              <div class="m-links">
+                <a class="btn btn-primary" href="https://github.com/joaorossiferreira/nectopoint" target="_blank" rel="noopener">Repositório (cópia pessoal) <span class="arr" aria-hidden="true">↗</span></a>
+                <a class="link" href="https://github.com/joaorossiferreira/nectopoint-front" target="_blank" rel="noopener">Front-end</a>
+                <a class="link" href="https://github.com/joaorossiferreira/nectopoint-back" target="_blank" rel="noopener">Back-end</a>
+                <a class="link" href="https://github.com/Equipe-Skyfall/nectopoint" target="_blank" rel="noopener">Original da equipe</a>
+              </div>
+            </header>
+            <dl class="m-facts">
+              <div><dt>Empresa parceira</dt><dd>Necto Systems</dd></div>
+              <div><dt>Meu papel</dt><dd>Dev Team, front-end</dd></div>
+              <div><dt>Período</dt><dd>mar a mai/2025</dd></div>
+              <div><dt>Situação</dt><dd>Concluído, 3 de 3 sprints</dd></div>
             </dl>
-          </header>
-          <figure class="project-media">
-            <img src="assets/img/smartfarming.webp" alt="Telas do Smart Farming: médias de temperatura, umidade e volume de água e gráficos dos sensores" loading="lazy" width="2400" height="800">
-            <figcaption>Telas reais do MVP final: médias dos sensores e gráficos por variável. <a href="assets/media/smartfarming.gif" target="_blank" rel="noopener">Ver demonstração animada</a></figcaption>
-          </figure>
-          <div class="project-body">
-            <section class="pb-block">
-              <h4>Problema</h4>
-              <p>A equipe parceira coletava dados de sensores de uma estufa (temperatura, umidade do solo e do ar, volume de água), mas tratava e analisava esses dados manualmente em planilhas. O processo era lento, sujeito a erro e não permitia perceber rapidamente quando uma condição saía da faixa ideal para o cultivo.</p>
-            </section>
-            <section class="pb-block">
-              <h4>Solução desenvolvida</h4>
-              <p>Site que recebe os arquivos gerados pelos sensores, armazena as leituras em banco de dados e as trata automaticamente, exibindo gráficos por variável, tabela de dados, médias, filtro por período e alertas quando os valores ultrapassam limites definidos.</p>
-            </section>
-            <section class="pb-block">
-              <h4>Tecnologias</h4>
-              <ul class="tech"><li>Python</li><li>Flask</li><li>Pandas</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>JavaScript</li><li>Figma</li></ul>
-            </section>
-            <section class="pb-block">
-              <h4>Contribuições pessoais</h4>
-              <ul class="bullets">
-                <li>Configuração do ambiente virtual Flask usado pela equipe.</li>
-                <li>Arquitetura de informação e prototipação das telas no Figma.</li>
-                <li>Interfaces com gráficos dos sensores e apresentação dos dados para facilitar a leitura.</li>
-                <li>Apoio ao sistema de alertas por limites predefinidos.</li>
-              </ul>
-            </section>
-            <section class="pb-block pb-half">
-              <h4>Hard skills desenvolvidas</h4>
-              <ul class="bullets">
-                <li>Fundamentos de HTML, CSS e JavaScript.</li>
-                <li>Back-end simples em Python com Flask e leitura de dados com Pandas.</li>
-                <li>Versionamento com Git/GitHub em equipe.</li>
-              </ul>
-            </section>
-            <section class="pb-block pb-half">
-              <h4>Soft skills exercitadas</h4>
-              <dl class="soft">
-                <dt>Autonomia</dt><dd>Pesquisei sozinho bibliotecas de gráficos e formas de apresentar os dados, já que tudo era novo para mim.</dd>
-                <dt>Criatividade</dt><dd>Busquei formas visuais simples para que dados técnicos fossem entendidos rapidamente.</dd>
-                <dt>Adaptação ao Scrum</dt><dd>Primeiro contato com sprints, backlog e entregas incrementais.</dd>
-              </dl>
-            </section>
-            <p class="links">
-              <a class="btn btn-primary" href="https://github.com/joaorossiferreira/Projeto-Smart-Farming" target="_blank" rel="noopener">Repositório (cópia pessoal)</a>
-              <a class="link muted" href="https://github.com/CyberScrums/Projeto-Smart-Farming" target="_blank" rel="noopener">Original da equipe</a>
-            </p>
+            <figure class="m-shot">
+              <img src="assets/img/nectopoint.webp" alt="Telas do NectoPoint: registro de ponto e formulário de solicitações" loading="lazy" width="2400" height="1200">
+              <figcaption>Registro de ponto e o módulo de Solicitações, que eu desenvolvi. Capturadas rodando o projeto localmente com dados fictícios.</figcaption>
+            </figure>
+            <div class="m-body">
+              <div class="m-main">
+                <section class="m-block">
+                  <h4>Problema</h4>
+                  <p>O registro manual de ponto gerava erros e inconsistências nas horas trabalhadas, e não havia um lugar único para tratar horas extras, férias, folgas e justificativas de ausência. Os pedidos dos colaboradores e as aprovações dos gestores ficavam dispersos, e decisões sobre banco de horas e escalas eram tomadas sem dados confiáveis.</p>
+                </section>
+                <section class="m-block">
+                  <h4>Solução desenvolvida</h4>
+                  <p>Sistema web de controle de ponto. O colaborador registra entrada, saída e intervalos, consulta o histórico e abre solicitações (férias, folga, hora extra, abono com atestado e ajuste de ponto). O gestor aprova ou reprova, ajusta marcações e acompanha relatórios de horas extras e ausências, com cálculo automático conforme a CLT.</p>
+                </section>
+                <section class="m-block">
+                  <h4>Contribuições pessoais</h4>
+                  <ul class="bullets">
+                    <li>Prototipação no Figma e <strong>barra de navegação</strong> adaptada a cada perfil (colaborador e gestor).</li>
+                    <li>Módulo completo de <strong>Solicitações</strong>: férias, folga, hora extra e abono, com <strong>anexo de arquivos</strong>.</li>
+                    <li>Fluxo de <strong>aprovação de solicitações</strong> pelo gestor.</li>
+                    <li><strong>Edição de ponto</strong>, inclusive para turnos já encerrados.</li>
+                    <li>Tipagem com <em>enums</em> e interfaces TypeScript e um hook para padronizar o envio de JSON à API Java.</li>
+                  </ul>
+                </section>
+              </div>
+              <aside class="m-side">
+                <section class="m-block">
+                  <h4>Tecnologias</h4>
+                  <ul class="tech"><li class="chip">React</li><li class="chip">TypeScript</li><li class="chip">Tailwind CSS</li><li class="chip">Java</li><li class="chip">Spring Boot</li><li class="chip">Figma</li><li class="chip">Jira</li></ul>
+                </section>
+                <section class="m-block">
+                  <h4>Hard skills</h4>
+                  <p class="lvl-cap">Nível atual, de 1 a 5</p>
+                  <ul class="lvl-list">
+                    <li><span class="lvl-name">React e TypeScript</span><span class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">4/5, avançado</span></li>
+                    <li><span class="lvl-name">Java e Spring Boot</span><span class="meter" data-l="2" role="img" aria-label="Nível 2 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">2/5, utilizador básico</span></li>
+                  </ul>
+                  <ul class="bullets">
+                    <li>TypeScript com tipagem forte (enums e interfaces) em React.</li>
+                    <li>Integração com API REST em Spring Boot, incluindo upload de arquivos.</li>
+                    <li>Criação de hooks customizados.</li>
+                  </ul>
+                </section>
+                <section class="m-block">
+                  <h4>Soft skills</h4>
+                  <dl class="soft">
+                    <dt>Proatividade</dt><dd>No início demorei para começar as tarefas e atrasei partes que dependiam do front. A partir da Sprint 2 passei a puxar as tarefas mais cedo. Foi uma melhora real, ainda que não completa.</dd>
+                    <dt>Comunicação</dt><dd>A comunicação entre front e back foi uma falha da equipe, e eu tive parte nela. Aprendi a combinar os contratos de API logo no início e levei isso para os projetos seguintes.</dd>
+                    <dt>Trabalho em equipe</dt><dd>Com a troca de Scrum Master precisei me adaptar a outra dinâmica. Fiquei disponível para ajudar e para pedir ajuda.</dd>
+                  </dl>
+                </section>
+              </aside>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" id="api-4" aria-labelledby="api-4-t">
+          <div class="project-inner">
+            <header class="m-head">
+              <div>
+                <p class="when">4º semestre, 2025/2</p>
+                <h3 class="m-title" id="api-4-t">SkyTrack</h3>
+                <p class="m-sub">Monitoramento meteorológico e alertas de risco</p>
+              </div>
+              <div class="m-links">
+                <a class="btn btn-primary" href="https://github.com/joaorossiferreira/skytrack" target="_blank" rel="noopener">Repositório (cópia pessoal) <span class="arr" aria-hidden="true">↗</span></a>
+                <a class="link" href="https://github.com/joaorossiferreira/skytrack-front" target="_blank" rel="noopener">Front-end</a>
+                <a class="link" href="https://github.com/joaorossiferreira/skytrack-back" target="_blank" rel="noopener">Back-end</a>
+                <a class="link" href="https://github.com/Equipe-Skyfall/skytrack" target="_blank" rel="noopener">Original da equipe</a>
+              </div>
+            </header>
+            <dl class="m-facts">
+              <div><dt>Empresa parceira</dt><dd>Tecsus</dd></div>
+              <div><dt>Meu papel</dt><dd>Dev Team, front-end</dd></div>
+              <div><dt>Período</dt><dd>set a nov/2025</dd></div>
+              <div><dt>Situação</dt><dd>Concluído, 3 de 3 sprints</dd></div>
+            </dl>
+            <figure class="m-shot">
+              <img src="assets/img/skytrack.webp" alt="Telas do SkyTrack: estações pluviométricas e dashboard com dados em tempo real" loading="lazy" width="2400" height="1200">
+              <figcaption>Telas reais do sistema. <a class="link" href="assets/media/skytrack.mp4" target="_blank" rel="noopener">Ver demonstração do MVP final (2 min)</a></figcaption>
+            </figure>
+            <div class="m-body">
+              <div class="m-main">
+                <section class="m-block">
+                  <h4>Problema</h4>
+                  <p>O cliente não tinha acesso, em tempo real, a dados de chuva, vento, umidade, temperatura e pressão, o que dificultava antecipar riscos como enchentes e deslizamentos. Estações de fabricantes diferentes usam formatos distintos, o que impedia reunir os dados em um só lugar, e as informações não eram compreensíveis para o público leigo (alunos e moradores).</p>
+                </section>
+                <section class="m-block">
+                  <h4>Solução desenvolvida</h4>
+                  <p>Plataforma que recebe dados de estações meteorológicas de baixo custo (ESP32 com sensores), com um modelo de dados dinâmico que aceita diferentes estações e parâmetros. Os dados aparecem em um painel com histórico e relatórios, regras de alerta geram notificações automáticas de risco e uma área educacional explica, em linguagem acessível, como as medições são calculadas.</p>
+                </section>
+                <section class="m-block">
+                  <h4>Contribuições pessoais</h4>
+                  <p class="note">Fui o integrante com mais commits no repositório de front-end.</p>
+                  <ul class="bullets">
+                    <li>Estrutura base do front: <strong>sidebar, rotas, tela de login</strong> e reforço de segurança no <code>AuthContext</code>.</li>
+                    <li>Páginas de <strong>Estações, Parâmetros, Histórico</strong> e <strong>Relatórios com exportação CSV</strong>.</li>
+                    <li>Troca dos dados simulados pela <strong>integração real com o back-end</strong>.</li>
+                    <li><strong>Notificações de alerta para o usuário público</strong> e página <strong>Educação</strong>.</li>
+                    <li>Modo escuro, padronização visual e refatoração da estrutura de pastas.</li>
+                    <li><strong>CI no GitHub Actions</strong> (build do front) e <strong>testes de integração com Jest</strong>.</li>
+                  </ul>
+                </section>
+              </div>
+              <aside class="m-side">
+                <section class="m-block">
+                  <h4>Tecnologias</h4>
+                  <ul class="tech"><li class="chip">React</li><li class="chip">TypeScript</li><li class="chip">Tailwind CSS</li><li class="chip">Node.js</li><li class="chip">Prisma</li><li class="chip">PostgreSQL</li><li class="chip">MongoDB</li><li class="chip">ESP32 e Arduino</li><li class="chip">Jest</li><li class="chip">GitHub Actions</li><li class="chip">Vercel</li></ul>
+                </section>
+                <section class="m-block">
+                  <h4>Hard skills</h4>
+                  <p class="lvl-cap">Nível atual, de 1 a 5</p>
+                  <ul class="lvl-list">
+                    <li><span class="lvl-name">React e TypeScript</span><span class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">4/5, avançado</span></li>
+                    <li><span class="lvl-name">GitHub Actions</span><span class="meter" data-l="3" role="img" aria-label="Nível 3 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">3/5, desenvolvedor autônomo</span></li>
+                    <li><span class="lvl-name">Jest</span><span class="meter" data-l="2" role="img" aria-label="Nível 2 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">2/5, utilizador básico</span></li>
+                  </ul>
+                  <ul class="bullets">
+                    <li>Arquitetura de front React com contexto de autenticação e rotas protegidas.</li>
+                    <li>Visualização de séries temporais e exportação de dados.</li>
+                    <li>Integração contínua e testes automatizados.</li>
+                  </ul>
+                </section>
+                <section class="m-block">
+                  <h4>Soft skills</h4>
+                  <dl class="soft">
+                    <dt>Iniciativa</dt><dd>Assumi CI e testes, fora da parte visual, quando vi que a equipe não tinha nenhuma validação automática antes do merge.</dd>
+                    <dt>Comunicação</dt><dd>Escrevi o conteúdo educacional para quem não é da área, explicando a lógica técnica em linguagem simples.</dd>
+                    <dt>Colaboração</dt><dd>Revisei e integrei pull requests de colegas, mantendo as branches dev, test e main sincronizadas.</dd>
+                  </dl>
+                </section>
+              </aside>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" id="api-5" aria-labelledby="api-5-t">
+          <div class="project-inner">
+            <header class="m-head">
+              <div>
+                <p class="when">5º semestre, 2026/1</p>
+                <h3 class="m-title" id="api-5-t">Themis</h3>
+                <p class="m-sub">Análise jurídica de precedentes com IA</p>
+              </div>
+              <div class="m-links">
+                <a class="btn btn-primary" href="https://github.com/joaorossiferreira/themis" target="_blank" rel="noopener">Repositório (cópia pessoal) <span class="arr" aria-hidden="true">↗</span></a>
+                <a class="link" href="https://github.com/joaorossiferreira/themis-app" target="_blank" rel="noopener">App Flutter</a>
+                <a class="link" href="https://github.com/joaorossiferreira/themis-back" target="_blank" rel="noopener">Back-end</a>
+                <a class="link" href="https://github.com/Equipe-Skyfall/themis" target="_blank" rel="noopener">Original da equipe</a>
+              </div>
+            </header>
+            <dl class="m-facts">
+              <div><dt>Empresa parceira</dt><dd>Xertica</dd></div>
+              <div><dt>Meu papel</dt><dd>Dev Team, app mobile</dd></div>
+              <div><dt>Período</dt><dd>mar a mai/2026</dd></div>
+              <div><dt>Situação</dt><dd>Concluído</dd></div>
+            </dl>
+            <figure class="m-shot">
+              <img src="assets/img/themis.webp" alt="Telas do app Themis: login e precedentes encontrados com porcentagem de similaridade" loading="lazy" width="2400" height="1200">
+              <figcaption>Telas reais do app. <a class="link" href="assets/media/themis.mp4" target="_blank" rel="noopener">Ver demonstração em vídeo (57 s)</a></figcaption>
+            </figure>
+            <div class="m-body">
+              <div class="m-main">
+                <section class="m-block">
+                  <h4>Problema</h4>
+                  <p>Advogados e magistrados precisam fundamentar petições e decisões em precedentes, mas as decisões estão espalhadas entre vários tribunais e em grande volume. Achar os precedentes que realmente se aplicam exige ler decisões inteiras, sem medida objetiva de semelhança com o caso, o que consome tempo e aumenta o risco de usar um precedente inadequado ou desatualizado.</p>
+                </section>
+                <section class="m-block">
+                  <h4>Solução desenvolvida</h4>
+                  <p>App mobile ligado a uma API em Python que analisa a petição (PDF ou descrição do caso) com processamento de linguagem natural, consulta uma base indexada de precedentes e devolve as decisões relacionadas com porcentagem de similaridade, classificação de aplicabilidade, resumo do caso e explicação da relação com cada precedente. No modo advogado, a IA também gera a petição inicial.</p>
+                </section>
+                <section class="m-block">
+                  <h4>Contribuições pessoais</h4>
+                  <p class="note">Fui o integrante com mais commits no repositório do aplicativo.</p>
+                  <ul class="bullets">
+                    <li>Telas de <strong>login e cadastro</strong>, rotas do app e integração da tela de upload de petição.</li>
+                    <li><strong>Frente 1 (modo advogado)</strong>: geração de petição com filtro por órgão (STF, STJ, TST, TRF, TRT) e integração com a API por <em>polling</em> assíncrono.</li>
+                    <li>Tela de resultado com a petição em Markdown, precedentes com selo de relevância e similaridade, e um <em>bottom sheet</em> para editar e gerar de novo.</li>
+                    <li><strong>Resumo e histórico de petições</strong>, minuta de sentença e <strong>exportação em PDF</strong>.</li>
+                    <li>Autenticação JWT com a API FastAPI e rodada final de testes e correções.</li>
+                  </ul>
+                </section>
+              </div>
+              <aside class="m-side">
+                <section class="m-block">
+                  <h4>Tecnologias</h4>
+                  <ul class="tech"><li class="chip">Flutter</li><li class="chip">Dart</li><li class="chip">flutter_hooks</li><li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">MongoDB</li><li class="chip">LLM e PLN</li><li class="chip">JWT</li><li class="chip">Docker</li><li class="chip">Figma</li></ul>
+                </section>
+                <section class="m-block">
+                  <h4>Hard skills</h4>
+                  <p class="lvl-cap">Nível atual, de 1 a 5</p>
+                  <ul class="lvl-list">
+                    <li><span class="lvl-name">Flutter e Dart</span><span class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">4/5, avançado</span></li>
+                    <li><span class="lvl-name">FastAPI</span><span class="meter" data-l="2" role="img" aria-label="Nível 2 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">2/5, utilizador básico</span></li>
+                  </ul>
+                  <ul class="bullets">
+                    <li>Mobile com Flutter e Dart e estado reativo com <code>flutter_hooks</code>.</li>
+                    <li>Consumo de APIs assíncronas (polling) com estados de carregamento e erro.</li>
+                    <li>Renderização de Markdown e geração de PDF no app.</li>
+                  </ul>
+                </section>
+                <section class="m-block">
+                  <h4>Soft skills</h4>
+                  <dl class="soft">
+                    <dt>Adaptabilidade</dt><dd>Aprendi Flutter durante o projeto, tecnologia nova para mim e para boa parte da equipe, e ainda assim entreguei a Frente 1 dentro das sprints.</dd>
+                    <dt>Autonomia</dt><dd>Tomei decisões de UX e de organização das telas sem depender de validação constante, o que reduziu retrabalho.</dd>
+                    <dt>Trabalho em equipe</dt><dd>Alinhei contratos de API, fluxo de polling e mensagens de erro com quem fazia o back-end em Python.</dd>
+                  </dl>
+                </section>
+              </aside>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" id="api-6" aria-labelledby="api-6-t">
+          <div class="project-inner">
+            <header class="m-head">
+              <div>
+                <p class="when">6º semestre, 2026/2</p>
+                <h3 class="m-title" id="api-6-t">CHATin</h3>
+                <p class="m-sub">Coach de estudos para o ENEM com IA</p>
+              </div>
+              <div class="m-links">
+                <a class="btn btn-primary" href="https://github.com/joaorossiferreira/chatin" target="_blank" rel="noopener">Repositório (cópia pessoal) <span class="arr" aria-hidden="true">↗</span></a>
+                <a class="link" href="https://github.com/joaorossiferreira/chatin-front" target="_blank" rel="noopener">Front-end</a>
+                <a class="link" href="https://github.com/joaorossiferreira/chatin-back" target="_blank" rel="noopener">Back-end</a>
+                <a class="link" href="https://github.com/Equipe-Skyfall/chatin" target="_blank" rel="noopener">Original da equipe</a>
+              </div>
+            </header>
+            <dl class="m-facts">
+              <div><dt>Empresa parceira</dt><dd>GSW</dd></div>
+              <div><dt>Meu papel</dt><dd>Product Owner</dd></div>
+              <div><dt>Período</dt><dd>set a nov/2026</dd></div>
+              <div><dt>Situação</dt><dd>Em andamento, sprint 2 de 3 concluída</dd></div>
+            </dl>
+            <figure class="m-shot"><img src="assets/img/chatin.webp" alt="Identidade visual do CHATin, assistente virtual de estudos" loading="lazy" width="1600" height="533"></figure>
+            <div class="m-body">
+              <div class="m-main">
+                <section class="m-block">
+                  <h4>Problema</h4>
+                  <p>Estudantes que se preparam para o ENEM têm dificuldade em saber o próprio nível em cada matéria, decidir o que estudar a seguir diante de um conteúdo extenso e perceber a própria evolução. Mentorias personalizadas são caras, o feedback sobre os erros chega tarde e a falta de progresso visível leva ao abandono do plano de estudos. Para o parceiro, o uso de IA precisa ser medido e limitado, e o sistema deve continuar útil mesmo se a IA estiver indisponível.</p>
+                </section>
+                <section class="m-block">
+                  <h4>Solução desenvolvida</h4>
+                  <p>Aplicação web em que o estudante conversa livremente com um coach de IA. O sistema reconhece a matéria e o tópico do ENEM, gera resumos salvos em uma biblioteca privada, cria questionários com correção automática, registra o progresso por tópico e ajusta a dificuldade. Inclui apostila guiada, trilhas de estudo, busca de fontes na web com citação e gamificação (XP, sequência de dias e ranking por apelido).</p>
+                </section>
+                <section class="m-block">
+                  <h4>Contribuições pessoais</h4>
+                  <ul class="bullets">
+                    <li>Levantei e documentei as <strong>dores do cliente</strong> (verificar, planejar e controlar os estudos) e a visão do produto a partir do desafio da GSW.</li>
+                    <li>Escrevi os <strong>18 requisitos funcionais e 9 não funcionais</strong>, incluindo as restrições de custo e de resiliência da IA.</li>
+                    <li>Montei o <strong>Product Backlog com 20 user stories</strong>, com prioridade, estimativa, critérios de aceitação e divisão em 3 sprints.</li>
+                    <li>Defini o <strong>DoR e o DoD</strong> e mantenho o README e os relatórios de sprint atualizados para as revisões com o parceiro.</li>
+                    <li>Configurei a estrutura inicial dos repositórios (submódulos de front e back) e ajudei em ajustes visuais na tela de progresso.</li>
+                  </ul>
+                </section>
+              </div>
+              <aside class="m-side">
+                <section class="m-block">
+                  <h4>Tecnologias</h4>
+                  <ul class="tech"><li class="chip">Next.js</li><li class="chip">TypeScript</li><li class="chip">Tailwind CSS</li><li class="chip">Python</li><li class="chip">FastAPI</li><li class="chip">PostgreSQL</li><li class="chip">Google Gemini</li><li class="chip">Vercel</li><li class="chip">Figma</li><li class="chip">Jira</li></ul>
+                </section>
+                <section class="m-block">
+                  <h4>Hard skills</h4>
+                  <p class="lvl-cap">Nível atual, de 1 a 5</p>
+                  <ul class="lvl-list">
+                    <li><span class="lvl-name">Scrum e Jira</span><span class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">4/5, avançado</span></li>
+                    <li><span class="lvl-name">Next.js</span><span class="meter" data-l="4" role="img" aria-label="Nível 4 de 5"><i></i><i></i><i></i><i></i><i></i></span><span class="skill-lvl">4/5, avançado</span></li>
+                  </ul>
+                  <ul class="bullets">
+                    <li>Engenharia de requisitos e user stories com critérios de aceitação verificáveis.</li>
+                    <li>Priorização e estimativa de backlog em pontos e planejamento de sprints.</li>
+                    <li>Noções de arquitetura de aplicações com LLM: classificação de tópicos e controle de tokens.</li>
+                  </ul>
+                </section>
+                <section class="m-block">
+                  <h4>Soft skills</h4>
+                  <dl class="soft">
+                    <dt>Comunicação com o cliente</dt><dd>Sou o ponto de contato da equipe com a GSW: traduzo o desafio do parceiro em requisitos e levo as dúvidas da equipe de volta ao cliente.</dd>
+                    <dt>Tomada de decisão</dt><dd>Priorizo o que entra em cada sprint, negociando escopo com a equipe para entregar valor sem sobrecarregar ninguém.</dd>
+                    <dt>Organização</dt><dd>Manter backlog, DoR, DoD e relatórios coerentes entre si exige disciplina e revisão constante.</dd>
+                  </dl>
+                </section>
+              </aside>
+            </div>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- ============ 2.2 e 2.3 PROJETOS PROFISSIONAIS E PESSOAIS ============ -->
-    <section id="outros-projetos" class="section section-alt" aria-labelledby="titulo-outros">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">2.2 e 2.3 · Projetos Profissionais e Pessoais</p>
-          <h2 id="titulo-outros">Além das APIs</h2>
-          <p class="lead">Experiência profissional atual e projetos feitos por iniciativa própria ou com colegas, fora da FATEC.</p>
+    <!-- 2.2 e 2.3 OUTROS PROJETOS -->
+    <section id="outros-projetos" class="section" aria-labelledby="titulo-outros">
+      <div class="wrap">
+        <header class="sec-head">
+          <h2 class="sec-title split" id="titulo-outros">Outros <em>projetos</em></h2>
+          <p class="sec-intro rv">Trabalho atual e projetos feitos fora da FATEC, sozinho ou com amigos.</p>
         </header>
 
-        <h3 class="sub-head" id="projetos-profissionais"><span>2.2</span>Projetos profissionais</h3>
-        <article class="job">
-          <div class="job-head">
-            <div>
-              <h3>PostNet</h3>
-              <p class="job-role">Atendimento / Administrativo</p>
+        <h3 class="sub-title rv" id="projetos-profissionais">Profissional</h3>
+        <article class="cell job rv">
+          <div>
+            <h4 class="job-name">PostNet</h4>
+            <p class="job-role">Atendimento e administrativo</p>
+            <p class="job-date"><span class="chip">jul/2026 até hoje</span></p>
+          </div>
+          <div>
+            <p>Rede de franquias de <em>Office Services</em> que atende pequenas e médias empresas, autônomos, estudantes e pessoas físicas com impressão, cópias, postagem, envio de encomendas e apoio administrativo.</p>
+            <div class="two">
+              <div>
+                <h4>Atividades</h4>
+                <ul class="bullets">
+                  <li>Atendimento presencial a pessoas e empresas, identificando a necessidade e indicando o serviço certo.</li>
+                  <li>Operação de impressão, cópia, postagem e envio.</li>
+                  <li>Rotinas administrativas: pedidos, cobrança e organização de documentos.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Competências exercitadas</h4>
+                <ul class="bullets">
+                  <li><strong>Comunicação e empatia:</strong> entender quem não sabe exatamente o que precisa.</li>
+                  <li><strong>Atenção a detalhes:</strong> pedidos com prazo e especificação corretos.</li>
+                  <li><strong>Resolver sob pressão:</strong> vários atendimentos nos horários de pico.</li>
+                </ul>
+              </div>
             </div>
-            <p class="job-date">jul/2026 – atual</p>
+            <p class="job-note">Ouvir quem vai usar antes de propor uma solução é a mesma postura que levo para o papel de Product Owner no CHATin.</p>
           </div>
-          <p>A PostNet é uma rede de franquias de <em>Office Services</em> que atende pequenas e médias empresas, profissionais autônomos, estudantes e pessoas físicas com serviços de impressão, cópias, postagem e envio de encomendas e apoio administrativo.</p>
-          <div class="job-grid">
-            <section>
-              <h4>Atividades</h4>
-              <ul class="bullets">
-                <li>Atendimento presencial a clientes pessoa física e empresas, identificando a necessidade e indicando o serviço adequado.</li>
-                <li>Operação dos serviços de impressão, cópia, postagem e envio.</li>
-                <li>Rotinas administrativas da unidade: registro de pedidos, cobrança e organização de documentos.</li>
-              </ul>
-            </section>
-            <section>
-              <h4>Competências exercitadas</h4>
-              <ul class="bullets">
-                <li><strong>Comunicação e empatia com o cliente</strong> — entender o pedido de quem não sabe exatamente o que precisa.</li>
-                <li><strong>Organização e atenção a detalhes</strong> — pedidos com prazo e especificação corretos.</li>
-                <li><strong>Resolução de problemas sob pressão</strong> — atendimento simultâneo em horários de pico.</li>
-              </ul>
-            </section>
-          </div>
-          <p class="note">A experiência com atendimento reforça uma competência que uso no desenvolvimento: ouvir o usuário final antes de propor uma solução — a mesma postura que exerci como Product Owner no CHATin.</p>
         </article>
 
-        <h3 class="sub-head" id="projetos-pessoais"><span>2.3</span>Projetos pessoais</h3>
-        <div class="cards">
-          <article class="card card-feature">
-            <img src="assets/img/minun.webp" alt="Logotipo da EVR Systems, equipe por trás do Minun" loading="lazy" width="1000" height="1000">
-            <div class="card-body">
-              <p class="project-meta"><span class="tag">2026</span><span class="tag tag-ok">Em produção</span></p>
-              <h3>Minun — Agendamento online para profissionais autônomos</h3>
-              <p>Plataforma SaaS desenvolvida com amigos (EVR Systems; nome inicial do projeto: <em>Agile</em>). Clientes agendam sozinhos por um link personalizado, recebem lembretes automáticos e o profissional acompanha agenda, clientes e faturamento em um dashboard. Possui planos de assinatura (gratuito, Solo, Equipe e Business).</p>
-              <p><strong>Minha participação:</strong> desenvolvimento do front-end em TypeScript (repositório Agile-Front).</p>
-              <ul class="tech"><li>TypeScript</li><li>CSS</li><li>Figma</li><li>Jira</li></ul>
-              <p class="links"><a class="btn btn-primary" href="https://minun.com.br" target="_blank" rel="noopener">Acessar minun.com.br</a></p>
+        <h3 class="sub-title rv" id="projetos-pessoais">Pessoais</h3>
+        <div class="side">
+          <article class="cell s-minun rv">
+            <div class="s-logo"><img src="assets/img/minun.webp" alt="Logotipo da EVR Systems, equipe por trás do Minun" loading="lazy" width="1000" height="1000"></div>
+            <div class="s-text">
+              <p class="work-meta"><span>2026</span><span class="status"><i aria-hidden="true"></i>Em produção</span></p>
+              <h3>Minun</h3>
+              <p class="muted">Agendamento online para profissionais autônomos, feito com amigos (EVR Systems; o projeto começou com o nome <em>Agile</em>). Clientes agendam por um link personalizado e recebem lembretes automáticos; o profissional acompanha agenda, clientes e faturamento em um dashboard, com planos gratuito, Solo, Equipe e Business.</p>
+              <p><strong>Minha parte:</strong> front-end em TypeScript (repositório Agile-Front).</p>
+              <div class="s-foot"><ul class="tech"><li class="chip">TypeScript</li><li class="chip">CSS</li><li class="chip">Figma</li><li class="chip">Jira</li></ul><a class="btn btn-primary magnetic" href="https://minun.com.br" target="_blank" rel="noopener">minun.com.br <span class="arr" aria-hidden="true">↗</span></a></div>
             </div>
           </article>
-          <article class="card">
-            <div class="card-body">
-              <p class="project-meta"><span class="tag">2025</span></p>
-              <h3>CyberProjekt — Jogo mobile de puzzles</h3>
-              <p>Jogo Android com tema cyberpunk: o jogador explora um mapa e desbloqueia missões de código, lógica e matemática em três níveis, ganhando XP e moedas. Tem loja com sistema gacha, inventário, ranking, modo treino offline, eventos sazonais e missões de arrastar blocos de código.</p>
-              <p>Autenticação com JWT e bcrypt, biometria e recuperação de senha por e-mail. Desenvolvido individualmente.</p>
-              <ul class="tech"><li>React Native</li><li>Expo</li><li>TypeScript</li><li>Node.js</li><li>MongoDB</li><li>JWT</li></ul>
-              <p class="links"><a class="link" href="https://github.com/joaorossiferreira/CyberProjekt" target="_blank" rel="noopener">Repositório no GitHub</a></p>
-            </div>
+          <article class="cell s-cyber rv">
+            <p class="work-meta"><span>2025</span><span>Individual</span></p>
+            <h3>CyberProjekt</h3>
+            <p class="muted">Jogo Android cyberpunk de puzzles: o jogador explora um mapa e desbloqueia missões de código, lógica e matemática, com loja gacha, inventário, ranking, modo offline e eventos sazonais. Login com JWT e bcrypt, biometria e recuperação de senha por e-mail.</p>
+            <ul class="tech"><li class="chip">React Native</li><li class="chip">Expo</li><li class="chip">TypeScript</li><li class="chip">Node.js</li><li class="chip">MongoDB</li></ul>
+            <p><a class="link" href="https://github.com/joaorossiferreira/CyberProjekt" target="_blank" rel="noopener">Repositório no GitHub</a></p>
           </article>
-          <article class="card">
-            <div class="card-body">
-              <p class="project-meta"><span class="tag">2025</span></p>
-              <h3>Biblioteca Digital — HTTP/2 + gRPC</h3>
-              <p>Sistema de gerenciamento de biblioteca com API REST sobre HTTP/2 (com certificados TLS) e serviço de busca em gRPC definido por Protocol Buffers. Interface com atualização em tempo real, filtros por disponibilidade e busca com <em>debounce</em>.</p>
-              <ul class="tech"><li>Node.js</li><li>HTTP/2</li><li>gRPC</li><li>Protocol Buffers</li><li>JavaScript</li></ul>
-              <p class="links"><a class="link" href="https://github.com/joaorossiferreira/gttp2_grpc" target="_blank" rel="noopener">Repositório no GitHub</a></p>
-            </div>
+          <article class="cell s-lib rv">
+            <p class="work-meta"><span>2025</span><span>Individual</span></p>
+            <h3>Biblioteca Digital</h3>
+            <p class="muted">Gerenciamento de biblioteca com API REST sobre HTTP/2 (com TLS) e busca em gRPC definida por Protocol Buffers. Interface em tempo real, filtro por disponibilidade e busca com <em>debounce</em>.</p>
+            <ul class="tech"><li class="chip">Node.js</li><li class="chip">HTTP/2</li><li class="chip">gRPC</li><li class="chip">Protocol Buffers</li></ul>
+            <p><a class="link" href="https://github.com/joaorossiferreira/gttp2_grpc" target="_blank" rel="noopener">Repositório no GitHub</a></p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ 3. INFORMAÇÕES CURRICULARES ============ -->
+    <!-- 3. INFORMAÇÕES CURRICULARES -->
     <section id="curriculo" class="section" aria-labelledby="titulo-curriculo">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">3 · Informações Curriculares</p>
-          <h2 id="titulo-curriculo">Currículo</h2>
+      <div class="wrap">
+        <header class="sec-head">
+          <h2 class="sec-title split" id="titulo-curriculo">Currículo</h2>
         </header>
-
-        <div class="cv-grid">
-          <section class="panel">
-            <h3 class="panel-title">Formação acadêmica</h3>
-            <ol class="cv-list">
+        <div class="cv">
+          <article class="cell c-edu rv">
+            <p class="cell-label">Formação</p>
+            <ol class="timeline">
               <li>
-                <p class="cv-date">2024 – 2026 (previsão de conclusão: dez/2026)</p>
-                <p class="cv-title">Tecnólogo em Desenvolvimento de Software Multiplataforma</p>
-                <p class="muted">FATEC Prof. Jessen Vidal — São José dos Campos · cursando o 6º semestre</p>
+                <p class="when">2024 a 2026, conclusão prevista para dez/2026</p>
+                <p class="what">Tecnólogo em Desenvolvimento de Software Multiplataforma</p>
+                <p class="muted">FATEC Prof. Jessen Vidal, São José dos Campos. Cursando o 6º semestre.</p>
               </li>
               <li>
-                <p class="cv-date">2026 – em andamento (início em 2026/2)</p>
-                <p class="cv-title">Tecnólogo em Inteligência Artificial</p>
-                <p class="muted">UFMS — Universidade Federal de Mato Grosso do Sul · cursada em paralelo à FATEC</p>
+                <p class="when">Desde 2026/2, em andamento</p>
+                <p class="what">Tecnólogo em Inteligência Artificial</p>
+                <p class="muted">UFMS, Universidade Federal de Mato Grosso do Sul. Em paralelo à FATEC.</p>
               </li>
               <li>
-                <p class="cv-date">2021 – 2023</p>
-                <p class="cv-title">Ensino Médio</p>
+                <p class="when">2021 a 2023</p>
+                <p class="what">Ensino Médio</p>
                 <p class="muted">Escola Prof. Nelson do Nascimento Monteiro</p>
               </li>
             </ol>
-          </section>
-
-          <section class="panel">
-            <h3 class="panel-title">Idiomas e certificações</h3>
-            <ol class="cv-list">
+          </article>
+          <article class="cell cell-accent c-toeic rv">
+            <p class="cell-label">Certificação, out/2026</p>
+            <p class="score">930<small>/990</small></p>
+            <p class="what">TOEIC Listening and Reading</p>
+            <p class="muted">ETS. Faixa mais alta da escala oficial (860 a 990).</p>
+          </article>
+          <article class="cell c-course rv">
+            <p class="cell-label">Curso concluído, abr/2026</p>
+            <p class="what">Introduction to Generative AI</p>
+            <p class="muted">Google Cloud (Google Skills). Fundamentos de IA generativa e modelos de linguagem (LLMs).</p>
+            <p style="margin-top:14px"><a class="link" href="https://www.skills.google/public_profiles/b298cbca-111c-4606-987e-db555a85afc5/badges/23827876" target="_blank" rel="noopener">Ver credencial ↗</a></p>
+          </article>
+          <article class="cell c-lang rv">
+            <p class="cell-label">Idiomas</p>
+            <ul class="lang-list">
+              <li><strong>Português</strong><span class="muted">Nativo</span></li>
+              <li><strong>Inglês</strong><span class="muted">Avançado em leitura, escrita e conversação</span></li>
+            </ul>
+          </article>
+          <article class="cell c-events rv" aria-labelledby="titulo-eventos">
+            <p class="cell-label" id="titulo-eventos">Eventos e apresentações</p>
+            <ul class="stack-list">
               <li>
-                <p class="cv-title">Português</p>
-                <p class="muted">Nativo</p>
+                <p class="when">2024 a 2026, a cada sprint</p>
+                <p class="what">Sprint reviews para os parceiros</p>
+                <p class="muted">Apresentação dos incrementos aos clientes dos seis projetos integradores, entre eles Necto Systems, Tecsus, Xertica e GSW. No CHATin, conduzo a apresentação como Product Owner.</p>
               </li>
               <li>
-                <p class="cv-title">Inglês</p>
-                <p class="muted">Avançado — leitura, escrita e conversação.</p>
+                <p class="when">Todo semestre</p>
+                <p class="what">Projetos para visitantes da FATEC</p>
+                <p class="muted">Apresento os projetos do curso a estudantes que visitam a FATEC, explicando problema, solução e tecnologias para quem ainda não é da área.</p>
+              </li>
+            </ul>
+          </article>
+          <article class="cell c-work rv" aria-labelledby="titulo-trabalhos">
+            <p class="cell-label" id="titulo-trabalhos">Trabalhos acadêmicos</p>
+            <ul class="works">
+              <li>
+                <p class="when">2026/2, apresentação em 26/11</p>
+                <p class="what">Pesquisa: testes de segurança</p>
+                <p class="muted">API com falhas propositais e pipeline no GitHub Actions com SAST, SCA, detecção de segredos, testes de abuso e DAST (OWASP ZAP). Em equipe.</p>
+                <a class="link" href="https://github.com/Equipe-Skyfall/Security-Testing" target="_blank" rel="noopener">Repositório</a>
               </li>
               <li>
-                <p class="cv-date">Certificação · out/2026</p>
-                <p class="cv-title">TOEIC Listening &amp; Reading — 930 / 990</p>
-                <p class="muted">ETS. Pontuação na faixa mais alta da escala oficial (860–990).</p>
+                <p class="when">2026/2</p>
+                <p class="what">Z-Score para outliers</p>
+                <p class="muted">Dez exercícios em Python e NumPy aplicando Z-Score a cenários como latência de API.</p>
+                <a class="link" href="https://github.com/joaorossiferreira/Z-Score" target="_blank" rel="noopener">Repositório</a>
               </li>
               <li>
-                <p class="cv-date">Curso concluído · abr/2026</p>
-                <p class="cv-title">Introduction to Generative AI</p>
-                <p class="muted">Google Cloud (Google Skills) — selo de conclusão. Fundamentos de IA generativa e modelos de linguagem (LLMs).</p>
-                <a class="link" href="https://www.skills.google/public_profiles/b298cbca-111c-4606-987e-db555a85afc5/badges/23827876" target="_blank" rel="noopener">Ver credencial</a>
+                <p class="when">2026/2</p>
+                <p class="what">Qualidade de dados com Power BI e Orange</p>
+                <p class="muted">Criar, armazenar (MariaDB), integrar, visualizar, avaliar a qualidade, tratar e minerar dados.</p>
+                <a class="link" href="https://github.com/joaorossiferreira/lista-exercicios-power-bi-orange" target="_blank" rel="noopener">Repositório</a>
               </li>
-            </ol>
-          </section>
+              <li>
+                <p class="when">2025/1</p>
+                <p class="what">Agente de IA: regras de negócio para Python</p>
+                <p class="muted">Interpreta regras escritas em linguagem natural (descontos, frete, impostos) e gera o código Python. Em equipe.</p>
+                <a class="link" href="https://github.com/joaorossiferreira/Bertoti" target="_blank" rel="noopener">Repositório</a>
+              </li>
+            </ul>
+          </article>
         </div>
-
-        <section class="panel" aria-labelledby="titulo-eventos">
-          <h3 class="panel-title" id="titulo-eventos">Eventos e apresentações</h3>
-          <ol class="cv-list cv-cols">
-            <li>
-              <p class="cv-date">2024 – 2026 · a cada sprint</p>
-              <p class="cv-title">Sprint reviews das APIs para os parceiros</p>
-              <p class="muted">Apresentação dos incrementos de cada sprint aos clientes dos seis projetos integradores, incluindo as empresas Necto Systems, Tecsus, Xertica e GSW. No CHATin, como Product Owner, conduzo a apresentação ao parceiro.</p>
-            </li>
-            <li>
-              <p class="cv-date">Todo semestre</p>
-              <p class="cv-title">Apresentação de projetos a visitantes da FATEC</p>
-              <p class="muted">Apresento os projetos desenvolvidos no curso a estudantes que visitam a FATEC São José dos Campos, explicando o problema, a solução e as tecnologias para quem ainda não é da área.</p>
-            </li>
-          </ol>
-        </section>
-
-        <section class="panel" aria-labelledby="titulo-trabalhos">
-          <h3 class="panel-title" id="titulo-trabalhos">Trabalhos e pesquisas acadêmicas</h3>
-          <ol class="cv-list cv-cols">
-            <li>
-              <p class="cv-date">6º semestre · 2026/2 · apresentação em 26/11/2026</p>
-              <p class="cv-title">Pesquisa: Testes Não Funcionais — Testes de Segurança</p>
-              <p class="muted">Disciplina de Qualidade e Testes de Software. API de exemplo com falhas propositais e pipeline no GitHub Actions com SAST (Bandit, Semgrep), SCA (pip-audit), detecção de segredos (Gitleaks), testes de abuso (pytest) e DAST (OWASP ZAP). Trabalho em equipe.</p>
-              <a class="link" href="https://github.com/Equipe-Skyfall/Security-Testing" target="_blank" rel="noopener">Repositório</a>
-            </li>
-            <li>
-              <p class="cv-date">6º semestre · 2026/2</p>
-              <p class="cv-title">Exercícios de Z-Score para detecção de outliers</p>
-              <p class="muted">Lista de 10 exercícios em Python/NumPy aplicando Z-Score a cenários como latência de API, com explicação comentada de cada solução.</p>
-              <a class="link" href="https://github.com/joaorossiferreira/Z-Score" target="_blank" rel="noopener">Repositório</a>
-            </li>
-            <li>
-              <p class="cv-date">6º semestre · 2026/2</p>
-              <p class="cv-title">Análise e qualidade de dados com Power BI e Orange</p>
-              <p class="muted">Fluxo completo: criar, armazenar (MariaDB/SQL), integrar, visualizar, avaliar qualidade (vazios, duplicidade, consistência), tratar e minerar dados.</p>
-              <a class="link" href="https://github.com/joaorossiferreira/lista-exercicios-power-bi-orange" target="_blank" rel="noopener">Repositório</a>
-            </li>
-            <li>
-              <p class="cv-date">2025/1</p>
-              <p class="cv-title">Agente de IA: tradutor de regras de negócio para Python</p>
-              <p class="muted">Agente que interpreta regras de negócio em linguagem natural (descontos, frete, impostos) e gera o código Python correspondente. Trabalho em equipe.</p>
-              <a class="link" href="https://github.com/joaorossiferreira/Bertoti" target="_blank" rel="noopener">Repositório</a>
-            </li>
-          </ol>
-        </section>
-
-        <section class="panel" aria-labelledby="titulo-skills">
-          <h3 class="panel-title" id="titulo-skills">Competências técnicas</h3>
-          <p class="muted">Autoavaliação baseada no uso real em projetos. Escala de 1 a 5:</p>
-          <ol class="scale" aria-label="Legenda da escala de proficiência">
-            <li><span class="dots" data-level="1" aria-hidden="true"></span><strong>1</strong> Conheço o conceito</li>
-            <li><span class="dots" data-level="2" aria-hidden="true"></span><strong>2</strong> Utilizador básico, com consulta frequente</li>
-            <li><span class="dots" data-level="3" aria-hidden="true"></span><strong>3</strong> Desenvolvedor autônomo em tarefas comuns</li>
-            <li><span class="dots" data-level="4" aria-hidden="true"></span><strong>4</strong> Avançado: entrego funcionalidades completas e oriento colegas</li>
-            <li><span class="dots" data-level="5" aria-hidden="true"></span><strong>5</strong> Fluente / referência técnica</li>
-          </ol>
-          <div class="skills-grid">
-            <table class="skills">
-              <caption>Front-end e mobile</caption>
-              <thead><tr><th scope="col">Tecnologia</th><th scope="col">Nível</th><th scope="col">Onde usei</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">React</th><td><span class="dots" data-level="4" role="img" aria-label="4 de 5"></span></td><td>ProStock, NectoPoint, SkyTrack</td></tr>
-                <tr><th scope="row">TypeScript</th><td><span class="dots" data-level="4" role="img" aria-label="4 de 5"></span></td><td>NectoPoint, SkyTrack, CyberProjekt</td></tr>
-                <tr><th scope="row">HTML e CSS</th><td><span class="dots" data-level="4" role="img" aria-label="4 de 5"></span></td><td>Todos os projetos web</td></tr>
-                <tr><th scope="row">Tailwind CSS</th><td><span class="dots" data-level="4" role="img" aria-label="4 de 5"></span></td><td>ProStock, NectoPoint, SkyTrack</td></tr>
-                <tr><th scope="row">JavaScript</th><td><span class="dots" data-level="4" role="img" aria-label="4 de 5"></span></td><td>Smart Farming, Biblioteca gRPC</td></tr>
-                <tr><th scope="row">Flutter / Dart</th><td><span class="dots" data-level="3" role="img" aria-label="3 de 5"></span></td><td>Themis</td></tr>
-                <tr><th scope="row">React Native / Expo</th><td><span class="dots" data-level="3" role="img" aria-label="3 de 5"></span></td><td>CyberProjekt</td></tr>
-                <tr><th scope="row">Next.js</th><td><span class="dots" data-level="2" role="img" aria-label="2 de 5"></span></td><td>CHATin</td></tr>
-              </tbody>
-            </table>
-            <table class="skills">
-              <caption>Back-end e dados</caption>
-              <thead><tr><th scope="col">Tecnologia</th><th scope="col">Nível</th><th scope="col">Onde usei</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">Node.js / Prisma</th><td><span class="dots" data-level="3" role="img" aria-label="3 de 5"></span></td><td>ProStock, SkyTrack, CyberProjekt</td></tr>
-                <tr><th scope="row">Python</th><td><span class="dots" data-level="3" role="img" aria-label="3 de 5"></span></td><td>Smart Farming, Z-Score, Agente IA</td></tr>
-                <tr><th scope="row">SQL (MySQL, PostgreSQL)</th><td><span class="dots" data-level="3" role="img" aria-label="3 de 5"></span></td><td>Smart Farming, SkyTrack, CHATin</td></tr>
-                <tr><th scope="row">MongoDB</th><td><span class="dots" data-level="3" role="img" aria-label="3 de 5"></span></td><td>SkyTrack, CyberProjekt</td></tr>
-                <tr><th scope="row">FastAPI / Flask</th><td><span class="dots" data-level="2" role="img" aria-label="2 de 5"></span></td><td>Smart Farming, Themis</td></tr>
-                <tr><th scope="row">Java / Spring Boot</th><td><span class="dots" data-level="2" role="img" aria-label="2 de 5"></span></td><td>NectoPoint (integração)</td></tr>
-                <tr><th scope="row">gRPC / HTTP/2</th><td><span class="dots" data-level="2" role="img" aria-label="2 de 5"></span></td><td>Biblioteca Digital</td></tr>
-                <tr><th scope="row">Power BI / Orange</th><td><span class="dots" data-level="2" role="img" aria-label="2 de 5"></span></td><td>Análise de dados</td></tr>
-              </tbody>
-            </table>
-            <table class="skills">
-              <caption>Ferramentas e processos</caption>
-              <thead><tr><th scope="col">Tecnologia</th><th scope="col">Nível</th><th scope="col">Onde usei</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">Git / GitHub</th><td><span class="dots" data-level="4" role="img" aria-label="4 de 5"></span></td><td>Todos os projetos</td></tr>
-                <tr><th scope="row">Scrum / Jira</th><td><span class="dots" data-level="4" role="img" aria-label="4 de 5"></span></td><td>Scrum Master (ProStock), PO (CHATin)</td></tr>
-                <tr><th scope="row">Figma</th><td><span class="dots" data-level="4" role="img" aria-label="4 de 5"></span></td><td>Protótipos de todas as APIs</td></tr>
-                <tr><th scope="row">GitHub Actions (CI)</th><td><span class="dots" data-level="3" role="img" aria-label="3 de 5"></span></td><td>SkyTrack, Security Testing</td></tr>
-                <tr><th scope="row">Jest</th><td><span class="dots" data-level="2" role="img" aria-label="2 de 5"></span></td><td>SkyTrack</td></tr>
-                <tr><th scope="row">Docker</th><td><span class="dots" data-level="2" role="img" aria-label="2 de 5"></span></td><td>Smart Farming, Themis</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
       </div>
     </section>
 
-    <!-- ============ 4. CONTATO ============ -->
-    <section id="contato" class="section section-alt contact" aria-labelledby="titulo-contato">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">4 · Contato</p>
-          <h2 id="titulo-contato">Vamos conversar</h2>
-        </header>
-        <ul class="contact-list">
-          <li>
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-rossi-7311a0301" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.05 3.78-2.05 4.05 0 4.8 2.66 4.8 6.12V21h-4v-5c0-1.2-.02-2.73-1.66-2.73-1.66 0-1.92 1.3-1.92 2.64V21h-4z"/></svg>
-              <span><strong>LinkedIn</strong><small>linkedin.com/in/joão-rossi-7311a0301</small></span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/joaorossiferreira" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
-              <span><strong>GitHub</strong><small>github.com/joaorossiferreira</small></span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:joaovitorvenou@gmail.com">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4 7.3V17h16V7.3z"/></svg>
-              <span><strong>E-mail</strong><small>joaovitorvenou@gmail.com</small></span>
-            </a>
-          </li>
+    <!-- 4. CONTATO -->
+    <section id="contato" class="section contact" aria-labelledby="titulo-contato">
+      <div class="wrap">
+        <h2 class="contact-big split" id="titulo-contato">Vamos <em>conversar?</em></h2>
+        <div class="mail-row rv">
+          <a class="mail" href="mailto:joaovitorvenou@gmail.com">joaovitorvenou@gmail.com</a>
+          <button class="pill-btn copy-btn" type="button" data-copy="joaovitorvenou@gmail.com" data-done-label="Copiado!">Copiar</button>
+        </div>
+        <ul class="socials rv">
+          <li><a href="https://www.linkedin.com/in/jo%C3%A3o-rossi-7311a0301" target="_blank" rel="noopener"><span class="s-name">LinkedIn</span><span class="s-handle">in/joão-rossi-7311a0301</span><span class="s-arr" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/joaorossiferreira" target="_blank" rel="noopener"><span class="s-name">GitHub</span><span class="s-handle">joaorossiferreira</span><span class="s-arr" aria-hidden="true">↗</span></a></li>
         </ul>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 João Vitor Rossi Ferreira · Portfólio acadêmico — DSM, FATEC São José dos Campos</p>
-      <p class="muted">Última atualização: 27/10/2026 · HTML, CSS e JavaScript puros, publicado no GitHub Pages</p>
+    <div class="wrap footer-inner">
+      <p>© 2026 João Vitor Rossi Ferreira. Portfólio acadêmico, DSM FATEC São José dos Campos.</p>
+      <p>Última atualização: 27/10/2026</p>
     </div>
   </footer>
 
